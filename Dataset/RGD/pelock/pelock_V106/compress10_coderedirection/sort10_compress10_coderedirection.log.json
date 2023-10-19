@@ -1,0 +1,184 @@
+{
+    "FileName": "sort10_compress10_coderedirection.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41b1cd": {
+        "start_addr": "0x41b1cd",
+        "end_addr": "0x41b1d2",
+        "called_time": 1025,
+        "REN": 0.14289697476648544,
+        "type": "nm",
+        "nextbb": [
+            4305363
+        ],
+        "ins_num": 2,
+        "bytes": "f31bf3eb01",
+        "controlsize": 2,
+        "instructions": [
+            "sbb esi, ebx",
+            "jmp 0x41b1d3"
+        ],
+        "variable": [
+            "esi"
+        ],
+        "slices": {
+            "esi": [
+                [
+                    "sbb esi, ebx",
+                    "f31bf3"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1d3": {
+        "start_addr": "0x41b1d3",
+        "end_addr": "0x41b1da",
+        "called_time": 1025,
+        "REN": 0.14289697476648544,
+        "type": "nm",
+        "nextbb": [
+            4305372
+        ],
+        "ins_num": 3,
+        "bytes": "c1f71e880beb02",
+        "controlsize": 2,
+        "instructions": [
+            "sal edi, 0x1e",
+            "mov byte ptr [ebx], cl",
+            "jmp 0x41b1dc"
+        ],
+        "variable": [
+            "[ebx]",
+            "edi"
+        ],
+        "slices": {
+            "[ebx]": [
+                [
+                    "mov byte ptr [ebx], cl",
+                    "880b"
+                ]
+            ],
+            "edi": [
+                [
+                    "sal edi, 0x1e",
+                    "c1f71e"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1e6": {
+        "start_addr": "0x41b1e6",
+        "end_addr": "0x41b1f3",
+        "called_time": 1025,
+        "REN": 0.14289697476648544,
+        "type": "nm",
+        "nextbb": [
+            4305397
+        ],
+        "ins_num": 6,
+        "bytes": "5ec1c61033f9f24383ee2deb02",
+        "controlsize": 2,
+        "instructions": [
+            "pop esi",
+            "rol esi, 0x10",
+            "xor edi, ecx",
+            "inc ebx",
+            "sub esi, 0x2d",
+            "jmp 0x41b1f5"
+        ],
+        "variable": [
+            "esi",
+            "ebx",
+            "edi"
+        ],
+        "slices": {
+            "esi": [
+                [
+                    "sub esi, 0x2d",
+                    "83ee2d"
+                ],
+                [
+                    "rol esi, 0x10",
+                    "c1c610"
+                ],
+                [
+                    "pop esi",
+                    "5e"
+                ]
+            ],
+            "ebx": [
+                [
+                    "inc ebx",
+                    "f243"
+                ]
+            ],
+            "edi": [
+                [
+                    "xor edi, ecx",
+                    "33f9"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1f5": {
+        "start_addr": "0x41b1f5",
+        "end_addr": "0x41b1f8",
+        "called_time": 1025,
+        "REN": 0.14289697476648544,
+        "type": "nm",
+        "nextbb": [
+            4305400,
+            4305401
+        ],
+        "ins_num": 2,
+        "bytes": "f87301",
+        "controlsize": 2,
+        "instructions": [
+            "clc ",
+            "jae 0x41b1f9"
+        ],
+        "variable": [],
+        "slices": {}
+    },
+    "bytes_0x41b1f9": {
+        "start_addr": "0x41b1f9",
+        "end_addr": "0x41b202",
+        "called_time": 1025,
+        "REN": 0.14289697476648544,
+        "type": "nm",
+        "nextbb": [
+            4305412
+        ],
+        "ins_num": 4,
+        "bytes": "f20bf923f9f248eb02",
+        "controlsize": 2,
+        "instructions": [
+            "or edi, ecx",
+            "and edi, ecx",
+            "dec eax",
+            "jmp 0x41b204"
+        ],
+        "variable": [
+            "eax",
+            "edi"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "dec eax",
+                    "f248"
+                ]
+            ],
+            "edi": [
+                [
+                    "and edi, ecx",
+                    "23f9"
+                ],
+                [
+                    "or edi, ecx",
+                    "f20bf9"
+                ]
+            ]
+        }
+    }
+}

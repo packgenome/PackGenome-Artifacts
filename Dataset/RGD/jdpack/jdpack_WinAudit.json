@@ -1,0 +1,159 @@
+{
+    "FileName": "jdpack_WinAudit",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x707043": {
+        "start_addr": "0x707043",
+        "end_addr": "0x707058",
+        "called_time": 1928,
+        "REN": 0.19970996478143774,
+        "type": "nm",
+        "nextbb": [
+            7368771,
+            7368792
+        ],
+        "ins_num": 7,
+        "bytes": "8a85603440008a1e32c38806889d6034400046e2eb",
+        "controlsize": 2,
+        "instructions": [
+            "mov al, byte ptr [ebp + 0x403460]",
+            "mov bl, byte ptr [esi]",
+            "xor al, bl",
+            "mov byte ptr [esi], al",
+            "mov byte ptr [ebp + 0x403460], bl",
+            "inc esi",
+            "loop 0x707043"
+        ],
+        "variable": [
+            null,
+            "esi",
+            "[ebp + 0x403460]",
+            "[esi]"
+        ],
+        "slices": {
+            "null": [
+                [
+                    "loop 0x707043",
+                    "e2eb"
+                ]
+            ],
+            "esi": [
+                [
+                    "inc esi",
+                    "46"
+                ]
+            ],
+            "[ebp + 0x403460]": [
+                [
+                    "mov byte ptr [ebp + 0x403460], bl",
+                    "889d60344000"
+                ],
+                [
+                    "mov bl, byte ptr [esi]",
+                    "8a1e"
+                ]
+            ],
+            "[esi]": [
+                [
+                    "mov byte ptr [esi], al",
+                    "8806"
+                ],
+                [
+                    "xor al, bl",
+                    "32c3"
+                ],
+                [
+                    "mov al, byte ptr [ebp + 0x403460]",
+                    "8a8560344000"
+                ]
+            ]
+        }
+    },
+    "bytes_0x70702e": {
+        "start_addr": "0x70702e",
+        "end_addr": "0x707058",
+        "called_time": 2,
+        "REN": 0.00020716801325875285,
+        "type": "nm",
+        "nextbb": [
+            7368771
+        ],
+        "ins_num": 10,
+        "bytes": "c7856934400001000000b9880700008db5182c40008a85603440008a1e32c38806889d6034400046e2eb",
+        "controlsize": 2,
+        "instructions": [
+            "mov dword ptr [ebp + 0x403469], 1",
+            "mov ecx, 0x788",
+            "lea esi, [ebp + 0x402c18]",
+            "mov al, byte ptr [ebp + 0x403460]",
+            "mov bl, byte ptr [esi]",
+            "xor al, bl",
+            "mov byte ptr [esi], al",
+            "mov byte ptr [ebp + 0x403460], bl",
+            "inc esi",
+            "loop 0x707043"
+        ],
+        "variable": [
+            null,
+            "esi",
+            "[ebp + 0x403460]",
+            "[esi]",
+            "ecx",
+            "[ebp + 0x403469]"
+        ],
+        "slices": {
+            "null": [
+                [
+                    "loop 0x707043",
+                    "e2eb"
+                ]
+            ],
+            "esi": [
+                [
+                    "inc esi",
+                    "46"
+                ],
+                [
+                    "lea esi, [ebp + 0x402c18]",
+                    "8db5182c4000"
+                ]
+            ],
+            "[ebp + 0x403460]": [
+                [
+                    "mov byte ptr [ebp + 0x403460], bl",
+                    "889d60344000"
+                ],
+                [
+                    "mov bl, byte ptr [esi]",
+                    "8a1e"
+                ]
+            ],
+            "[esi]": [
+                [
+                    "mov byte ptr [esi], al",
+                    "8806"
+                ],
+                [
+                    "xor al, bl",
+                    "32c3"
+                ],
+                [
+                    "mov al, byte ptr [ebp + 0x403460]",
+                    "8a8560344000"
+                ]
+            ],
+            "ecx": [
+                [
+                    "mov ecx, 0x788",
+                    "b988070000"
+                ]
+            ],
+            "[ebp + 0x403469]": [
+                [
+                    "mov dword ptr [ebp + 0x403469], 1",
+                    "c7856934400001000000"
+                ]
+            ]
+        }
+    }
+}

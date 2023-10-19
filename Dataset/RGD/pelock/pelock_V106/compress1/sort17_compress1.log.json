@@ -1,0 +1,91 @@
+{
+    "FileName": "sort17_compress1.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41b1bb": {
+        "start_addr": "0x41b1bb",
+        "end_addr": "0x41b1c7",
+        "called_time": 1025,
+        "REN": 0.33344176968119715,
+        "type": "nm",
+        "nextbb": [
+            4305352
+        ],
+        "ins_num": 4,
+        "bytes": "f380ea6fc1c810f38bceeb01",
+        "controlsize": 2,
+        "instructions": [
+            "sub dl, 0x6f",
+            "ror eax, 0x10",
+            "mov ecx, esi",
+            "jmp 0x41b1c8"
+        ],
+        "variable": [
+            "ecx",
+            "eax",
+            "edx"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "mov ecx, esi",
+                    "f38bce"
+                ]
+            ],
+            "eax": [
+                [
+                    "ror eax, 0x10",
+                    "c1c810"
+                ]
+            ],
+            "edx": [
+                [
+                    "sub dl, 0x6f",
+                    "f380ea6f"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1c8": {
+        "start_addr": "0x41b1c8",
+        "end_addr": "0x41b1d4",
+        "called_time": 1025,
+        "REN": 0.33344176968119715,
+        "type": "nm",
+        "nextbb": [
+            4305366
+        ],
+        "ins_num": 5,
+        "bytes": "f33bc0f3f7d08816045deb02",
+        "controlsize": 2,
+        "instructions": [
+            "cmp eax, eax",
+            "not eax",
+            "mov byte ptr [esi], dl",
+            "add al, 0x5d",
+            "jmp 0x41b1d6"
+        ],
+        "variable": [
+            "eax",
+            "[esi]"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "add al, 0x5d",
+                    "045d"
+                ],
+                [
+                    "not eax",
+                    "f3f7d0"
+                ]
+            ],
+            "[esi]": [
+                [
+                    "mov byte ptr [esi], dl",
+                    "8816"
+                ]
+            ]
+        }
+    }
+}

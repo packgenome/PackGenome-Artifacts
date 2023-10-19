@@ -1,0 +1,1735 @@
+{
+    "FileName": "source5_nrv2b_9_packed.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41c6ca": {
+        "start_addr": "0x41c6ca",
+        "end_addr": "0x41c6d3",
+        "called_time": 58848,
+        "REN": 0.15640082495269278,
+        "type": "a",
+        "nextbb": [
+            4310739,
+            4310730
+        ],
+        "ins_num": 5,
+        "bytes": "8a07472ce83c0177f7",
+        "controlsize": 2,
+        "instructions": [
+            "mov al, byte ptr [edi]",
+            "inc edi",
+            "sub al, 0xe8",
+            "cmp al, 1",
+            "ja 0x41c6ca"
+        ],
+        "variable": [
+            "eax",
+            "edi"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "sub al, 0xe8",
+                    "2ce8"
+                ],
+                [
+                    "mov al, byte ptr [edi]",
+                    "8a07"
+                ]
+            ],
+            "edi": [
+                [
+                    "inc edi",
+                    "47"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c62b": {
+        "start_addr": "0x41c62b",
+        "end_addr": "0x41c631",
+        "called_time": 31867,
+        "REN": 0.08469319414028448,
+        "type": "a",
+        "nextbb": [
+            4310577,
+            4310560
+        ],
+        "ins_num": 3,
+        "bytes": "11c001db73ef",
+        "controlsize": 2,
+        "instructions": [
+            "adc eax, eax",
+            "add ebx, ebx",
+            "jae 0x41c620"
+        ],
+        "variable": [
+            "ebx",
+            "eax"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ]
+            ],
+            "eax": [
+                [
+                    "adc eax, eax",
+                    "11c0"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c6ac": {
+        "start_addr": "0x41c6ac",
+        "end_addr": "0x41c6bb",
+        "called_time": 25312,
+        "REN": 0.06727191546361065,
+        "type": "am",
+        "nextbb": [
+            4310715,
+            4310700
+        ],
+        "ins_num": 6,
+        "bytes": "8b0283c204890783c70483e90477f1",
+        "controlsize": 2,
+        "instructions": [
+            "mov eax, dword ptr [edx]",
+            "add edx, 4",
+            "mov dword ptr [edi], eax",
+            "add edi, 4",
+            "sub ecx, 4",
+            "ja 0x41c6ac"
+        ],
+        "variable": [
+            "ecx",
+            "edi",
+            "[edi]",
+            "edx"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "sub ecx, 4",
+                    "83e904"
+                ]
+            ],
+            "edi": [
+                [
+                    "add edi, 4",
+                    "83c704"
+                ]
+            ],
+            "[edi]": [
+                [
+                    "mov dword ptr [edi], eax",
+                    "8907"
+                ],
+                [
+                    "mov eax, dword ptr [edx]",
+                    "8b02"
+                ]
+            ],
+            "edx": [
+                [
+                    "add edx, 4",
+                    "83c204"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c608": {
+        "start_addr": "0x41c608",
+        "end_addr": "0x41c612",
+        "called_time": 19711,
+        "REN": 0.052386090617226204,
+        "type": "anm",
+        "nextbb": [
+            4310546,
+            4310553
+        ],
+        "ins_num": 6,
+        "bytes": "8a064688074701db7507",
+        "controlsize": 2,
+        "instructions": [
+            "mov al, byte ptr [esi]",
+            "inc esi",
+            "mov byte ptr [edi], al",
+            "inc edi",
+            "add ebx, ebx",
+            "jne 0x41c619"
+        ],
+        "variable": [
+            "ebx",
+            "edi",
+            "[edi]",
+            "esi"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ]
+            ],
+            "edi": [
+                [
+                    "inc edi",
+                    "47"
+                ]
+            ],
+            "[edi]": [
+                [
+                    "mov byte ptr [edi], al",
+                    "8807"
+                ],
+                [
+                    "mov al, byte ptr [esi]",
+                    "8a06"
+                ]
+            ],
+            "esi": [
+                [
+                    "inc esi",
+                    "46"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c620": {
+        "start_addr": "0x41c620",
+        "end_addr": "0x41c624",
+        "called_time": 17339,
+        "REN": 0.046082006250930195,
+        "type": "a",
+        "nextbb": [
+            4310564,
+            4310571
+        ],
+        "ins_num": 2,
+        "bytes": "01db7507",
+        "controlsize": 2,
+        "instructions": [
+            "add ebx, ebx",
+            "jne 0x41c62b"
+        ],
+        "variable": [
+            "ebx"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c61b": {
+        "start_addr": "0x41c61b",
+        "end_addr": "0x41c624",
+        "called_time": 15538,
+        "REN": 0.041295473391023324,
+        "type": "a",
+        "nextbb": [
+            4310564,
+            4310571
+        ],
+        "ins_num": 3,
+        "bytes": "b80100000001db7507",
+        "controlsize": 2,
+        "instructions": [
+            "mov eax, 1",
+            "add ebx, ebx",
+            "jne 0x41c62b"
+        ],
+        "variable": [
+            "ebx",
+            "eax"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ]
+            ],
+            "eax": [
+                [
+                    "mov eax, 1",
+                    "b801000000"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c63c": {
+        "start_addr": "0x41c63c",
+        "end_addr": "0x41c643",
+        "called_time": 15538,
+        "REN": 0.041295473391023324,
+        "type": "a",
+        "nextbb": [
+            4310608,
+            4310595
+        ],
+        "ins_num": 3,
+        "bytes": "31c983e803720d",
+        "controlsize": 2,
+        "instructions": [
+            "xor ecx, ecx",
+            "sub eax, 3",
+            "jb 0x41c650"
+        ],
+        "variable": [
+            "eax",
+            "ecx"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "sub eax, 3",
+                    "83e803"
+                ]
+            ],
+            "ecx": [
+                [
+                    "xor ecx, ecx",
+                    "31c9"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c60e": {
+        "start_addr": "0x41c60e",
+        "end_addr": "0x41c612",
+        "called_time": 15537,
+        "REN": 0.04129281568260583,
+        "type": "a",
+        "nextbb": [
+            4310546,
+            4310553
+        ],
+        "ins_num": 2,
+        "bytes": "01db7507",
+        "controlsize": 2,
+        "instructions": [
+            "add ebx, ebx",
+            "jne 0x41c619"
+        ],
+        "variable": [
+            "ebx"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c6bb": {
+        "start_addr": "0x41c6bb",
+        "end_addr": "0x41c6c2",
+        "called_time": 15422,
+        "REN": 0.04098717921459401,
+        "type": "am",
+        "nextbb": [
+            4310542
+        ],
+        "ins_num": 2,
+        "bytes": "01cfe94cffffff",
+        "controlsize": 5,
+        "instructions": [
+            "add edi, ecx",
+            "jmp 0x41c60e"
+        ],
+        "variable": [
+            "edi"
+        ],
+        "slices": {
+            "edi": [
+                [
+                    "add edi, ecx",
+                    "01cf"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c668": {
+        "start_addr": "0x41c668",
+        "end_addr": "0x41c66c",
+        "called_time": 15059,
+        "REN": 0.04002243105904365,
+        "type": "a",
+        "nextbb": [
+            4310636,
+            4310668
+        ],
+        "ins_num": 2,
+        "bytes": "11c97520",
+        "controlsize": 2,
+        "instructions": [
+            "adc ecx, ecx",
+            "jne 0x41c68c"
+        ],
+        "variable": [
+            "ecx"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "adc ecx, ecx",
+                    "11c9"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c65b": {
+        "start_addr": "0x41c65b",
+        "end_addr": "0x41c661",
+        "called_time": 15048,
+        "REN": 0.03999319626645122,
+        "type": "a",
+        "nextbb": [
+            4310625,
+            4310632
+        ],
+        "ins_num": 3,
+        "bytes": "11c901db7507",
+        "controlsize": 2,
+        "instructions": [
+            "adc ecx, ecx",
+            "add ebx, ebx",
+            "jne 0x41c668"
+        ],
+        "variable": [
+            "ebx",
+            "ecx"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ]
+            ],
+            "ecx": [
+                [
+                    "adc ecx, ecx",
+                    "11c9"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c643": {
+        "start_addr": "0x41c643",
+        "end_addr": "0x41c64e",
+        "called_time": 12490,
+        "REN": 0.03319477813450131,
+        "type": "a",
+        "nextbb": [
+            4310722,
+            4310606
+        ],
+        "ins_num": 5,
+        "bytes": "c1e0088a064683f0ff7474",
+        "controlsize": 2,
+        "instructions": [
+            "shl eax, 8",
+            "mov al, byte ptr [esi]",
+            "inc esi",
+            "xor eax, 0xffffffff",
+            "je 0x41c6c2"
+        ],
+        "variable": [
+            "eax",
+            "esi"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "xor eax, 0xffffffff",
+                    "83f0ff"
+                ],
+                [
+                    "mov al, byte ptr [esi]",
+                    "8a06"
+                ]
+            ],
+            "esi": [
+                [
+                    "inc esi",
+                    "46"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c64e": {
+        "start_addr": "0x41c64e",
+        "end_addr": "0x41c654",
+        "called_time": 12489,
+        "REN": 0.03319212042608381,
+        "type": "a",
+        "nextbb": [
+            4310612,
+            4310619
+        ],
+        "ins_num": 3,
+        "bytes": "89c501db7507",
+        "controlsize": 2,
+        "instructions": [
+            "mov ebp, eax",
+            "add ebx, ebx",
+            "jne 0x41c65b"
+        ],
+        "variable": [
+            "ebx",
+            "ebp"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ]
+            ],
+            "ebp": [
+                [
+                    "mov ebp, eax",
+                    "89c5"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c68c": {
+        "start_addr": "0x41c68c",
+        "end_addr": "0x41c69d",
+        "called_time": 11402,
+        "REN": 0.030303191376267725,
+        "type": "am",
+        "nextbb": [
+            4310700,
+            4310685
+        ],
+        "ins_num": 5,
+        "bytes": "81fd00f3ffff83d1018d142f83fdfc760f",
+        "controlsize": 2,
+        "instructions": [
+            "cmp ebp, 0xfffff300",
+            "adc ecx, 1",
+            "lea edx, [edi + ebp]",
+            "cmp ebp, -4",
+            "jbe 0x41c6ac"
+        ],
+        "variable": [
+            "edx",
+            "ecx"
+        ],
+        "slices": {
+            "edx": [
+                [
+                    "lea edx, [edi + ebp]",
+                    "8d142f"
+                ]
+            ],
+            "ecx": [
+                [
+                    "adc ecx, 1",
+                    "83d101"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c69d": {
+        "start_addr": "0x41c69d",
+        "end_addr": "0x41c6a6",
+        "called_time": 7874,
+        "REN": 0.020926796079348543,
+        "type": "am",
+        "nextbb": [
+            4310694,
+            4310685
+        ],
+        "ins_num": 6,
+        "bytes": "8a02428807474975f7",
+        "controlsize": 2,
+        "instructions": [
+            "mov al, byte ptr [edx]",
+            "inc edx",
+            "mov byte ptr [edi], al",
+            "inc edi",
+            "dec ecx",
+            "jne 0x41c69d"
+        ],
+        "variable": [
+            "ecx",
+            "edi",
+            "[edi]",
+            "edx"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "dec ecx",
+                    "49"
+                ]
+            ],
+            "edi": [
+                [
+                    "inc edi",
+                    "47"
+                ]
+            ],
+            "[edi]": [
+                [
+                    "mov byte ptr [edi], al",
+                    "8807"
+                ],
+                [
+                    "mov al, byte ptr [edx]",
+                    "8a02"
+                ]
+            ],
+            "edx": [
+                [
+                    "inc edx",
+                    "42"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c678": {
+        "start_addr": "0x41c678",
+        "end_addr": "0x41c67e",
+        "called_time": 7571,
+        "REN": 0.02012151042884783,
+        "type": "a",
+        "nextbb": [
+            4310654,
+            4310637
+        ],
+        "ins_num": 3,
+        "bytes": "11c901db73ef",
+        "controlsize": 2,
+        "instructions": [
+            "adc ecx, ecx",
+            "add ebx, ebx",
+            "jae 0x41c66d"
+        ],
+        "variable": [
+            "ebx",
+            "ecx"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ]
+            ],
+            "ecx": [
+                [
+                    "adc ecx, ecx",
+                    "11c9"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c66c": {
+        "start_addr": "0x41c66c",
+        "end_addr": "0x41c671",
+        "called_time": 4136,
+        "REN": 0.010992282014755597,
+        "type": "a",
+        "nextbb": [
+            4310641,
+            4310648
+        ],
+        "ins_num": 3,
+        "bytes": "4101db7507",
+        "controlsize": 2,
+        "instructions": [
+            "inc ecx",
+            "add ebx, ebx",
+            "jne 0x41c678"
+        ],
+        "variable": [
+            "ebx",
+            "ecx"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ]
+            ],
+            "ecx": [
+                [
+                    "inc ecx",
+                    "41"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c689": {
+        "start_addr": "0x41c689",
+        "end_addr": "0x41c69d",
+        "called_time": 4136,
+        "REN": 0.010992282014755597,
+        "type": "am",
+        "nextbb": [
+            4310700,
+            4310685
+        ],
+        "ins_num": 6,
+        "bytes": "83c10281fd00f3ffff83d1018d142f83fdfc760f",
+        "controlsize": 2,
+        "instructions": [
+            "add ecx, 2",
+            "cmp ebp, 0xfffff300",
+            "adc ecx, 1",
+            "lea edx, [edi + ebp]",
+            "cmp ebp, -4",
+            "jbe 0x41c6ac"
+        ],
+        "variable": [
+            "edx",
+            "ecx"
+        ],
+        "slices": {
+            "edx": [
+                [
+                    "lea edx, [edi + ebp]",
+                    "8d142f"
+                ]
+            ],
+            "ecx": [
+                [
+                    "adc ecx, 1",
+                    "83d101"
+                ],
+                [
+                    "add ecx, 2",
+                    "83c102"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c66d": {
+        "start_addr": "0x41c66d",
+        "end_addr": "0x41c671",
+        "called_time": 3690,
+        "REN": 0.009806944060553229,
+        "type": "a",
+        "nextbb": [
+            4310641,
+            4310648
+        ],
+        "ins_num": 2,
+        "bytes": "01db7507",
+        "controlsize": 2,
+        "instructions": [
+            "add ebx, ebx",
+            "jne 0x41c678"
+        ],
+        "variable": [
+            "ebx"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c650": {
+        "start_addr": "0x41c650",
+        "end_addr": "0x41c654",
+        "called_time": 3049,
+        "REN": 0.008103352964939511,
+        "type": "a",
+        "nextbb": [
+            4310612,
+            4310619
+        ],
+        "ins_num": 2,
+        "bytes": "01db7507",
+        "controlsize": 2,
+        "instructions": [
+            "add ebx, ebx",
+            "jne 0x41c65b"
+        ],
+        "variable": [
+            "ebx"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c6d3": {
+        "start_addr": "0x41c6d3",
+        "end_addr": "0x41c6d8",
+        "called_time": 1811,
+        "REN": 0.004813109944081815,
+        "type": "a",
+        "nextbb": [
+            4310744,
+            4310730
+        ],
+        "ins_num": 2,
+        "bytes": "803f1175f2",
+        "controlsize": 2,
+        "instructions": [
+            "cmp byte ptr [edi], 0x11",
+            "jne 0x41c6ca"
+        ],
+        "variable": [],
+        "slices": {}
+    },
+    "bytes_0x41c6d8": {
+        "start_addr": "0x41c6d8",
+        "end_addr": "0x41c6f6",
+        "called_time": 1471,
+        "REN": 0.003909489082133821,
+        "type": "am",
+        "nextbb": [
+            4310735,
+            4310774
+        ],
+        "ins_num": 12,
+        "bytes": "8b078a5f0466c1e808c1c01086c429f880ebe801f0890783c70589d8e2d9",
+        "controlsize": 2,
+        "instructions": [
+            "mov eax, dword ptr [edi]",
+            "mov bl, byte ptr [edi + 4]",
+            "shr ax, 8",
+            "rol eax, 0x10",
+            "xchg ah, al",
+            "sub eax, edi",
+            "sub bl, 0xe8",
+            "add eax, esi",
+            "mov dword ptr [edi], eax",
+            "add edi, 5",
+            "mov eax, ebx",
+            "loop 0x41c6cf"
+        ],
+        "variable": [
+            null,
+            "eax",
+            "edi",
+            "[edi]"
+        ],
+        "slices": {
+            "null": [
+                [
+                    "loop 0x41c6cf",
+                    "e2d9"
+                ]
+            ],
+            "eax": [
+                [
+                    "mov eax, ebx",
+                    "89d8"
+                ],
+                [
+                    "sub bl, 0xe8",
+                    "80ebe8"
+                ],
+                [
+                    "mov bl, byte ptr [edi + 4]",
+                    "8a5f04"
+                ]
+            ],
+            "edi": [
+                [
+                    "add edi, 5",
+                    "83c705"
+                ]
+            ],
+            "[edi]": [
+                [
+                    "mov dword ptr [edi], eax",
+                    "8907"
+                ],
+                [
+                    "add eax, esi",
+                    "01f0"
+                ],
+                [
+                    "sub eax, edi",
+                    "29f8"
+                ],
+                [
+                    "xchg ah, al",
+                    "86c4"
+                ],
+                [
+                    "rol eax, 0x10",
+                    "c1c010"
+                ],
+                [
+                    "shr ax, 8",
+                    "66c1e808"
+                ],
+                [
+                    "mov eax, dword ptr [edi]",
+                    "8b07"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c6cf": {
+        "start_addr": "0x41c6cf",
+        "end_addr": "0x41c6d3",
+        "called_time": 1470,
+        "REN": 0.0039068313737163265,
+        "type": "am",
+        "nextbb": [
+            4310739,
+            4310730
+        ],
+        "ins_num": 2,
+        "bytes": "3c0177f7",
+        "controlsize": 2,
+        "instructions": [
+            "cmp al, 1",
+            "ja 0x41c6ca"
+        ],
+        "variable": [],
+        "slices": {}
+    },
+    "bytes_0x41c612": {
+        "start_addr": "0x41c612",
+        "end_addr": "0x41c61b",
+        "called_time": 1135,
+        "REN": 0.0030164990538558032,
+        "type": "a",
+        "nextbb": [
+            4310536,
+            4310555
+        ],
+        "ins_num": 4,
+        "bytes": "8b1e83eefc11db72ed",
+        "controlsize": 2,
+        "instructions": [
+            "mov ebx, dword ptr [esi]",
+            "sub esi, -4",
+            "adc ebx, ebx",
+            "jb 0x41c608"
+        ],
+        "variable": [
+            "ebx",
+            "esi"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "adc ebx, ebx",
+                    "11db"
+                ],
+                [
+                    "mov ebx, dword ptr [esi]",
+                    "8b1e"
+                ]
+            ],
+            "esi": [
+                [
+                    "sub esi, -4",
+                    "83eefc"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c624": {
+        "start_addr": "0x41c624",
+        "end_addr": "0x41c631",
+        "called_time": 1010,
+        "REN": 0.0026842855016690407,
+        "type": "a",
+        "nextbb": [
+            4310577,
+            4310560
+        ],
+        "ins_num": 6,
+        "bytes": "8b1e83eefc11db11c001db73ef",
+        "controlsize": 2,
+        "instructions": [
+            "mov ebx, dword ptr [esi]",
+            "sub esi, -4",
+            "adc ebx, ebx",
+            "adc eax, eax",
+            "add ebx, ebx",
+            "jae 0x41c620"
+        ],
+        "variable": [
+            "ebx",
+            "eax",
+            "esi"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ],
+                [
+                    "adc ebx, ebx",
+                    "11db"
+                ],
+                [
+                    "mov ebx, dword ptr [esi]",
+                    "8b1e"
+                ]
+            ],
+            "eax": [
+                [
+                    "adc eax, eax",
+                    "11c0"
+                ]
+            ],
+            "esi": [
+                [
+                    "sub esi, -4",
+                    "83eefc"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c633": {
+        "start_addr": "0x41c633",
+        "end_addr": "0x41c63c",
+        "called_time": 1010,
+        "REN": 0.0026842855016690407,
+        "type": "a",
+        "nextbb": [
+            4310588,
+            4310560
+        ],
+        "ins_num": 4,
+        "bytes": "8b1e83eefc11db73e4",
+        "controlsize": 2,
+        "instructions": [
+            "mov ebx, dword ptr [esi]",
+            "sub esi, -4",
+            "adc ebx, ebx",
+            "jae 0x41c620"
+        ],
+        "variable": [
+            "ebx",
+            "esi"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "adc ebx, ebx",
+                    "11db"
+                ],
+                [
+                    "mov ebx, dword ptr [esi]",
+                    "8b1e"
+                ]
+            ],
+            "esi": [
+                [
+                    "sub esi, -4",
+                    "83eefc"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c654": {
+        "start_addr": "0x41c654",
+        "end_addr": "0x41c661",
+        "called_time": 490,
+        "REN": 0.001302277124572109,
+        "type": "a",
+        "nextbb": [
+            4310625,
+            4310632
+        ],
+        "ins_num": 6,
+        "bytes": "8b1e83eefc11db11c901db7507",
+        "controlsize": 2,
+        "instructions": [
+            "mov ebx, dword ptr [esi]",
+            "sub esi, -4",
+            "adc ebx, ebx",
+            "adc ecx, ecx",
+            "add ebx, ebx",
+            "jne 0x41c668"
+        ],
+        "variable": [
+            "ebx",
+            "ecx",
+            "esi"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ],
+                [
+                    "adc ebx, ebx",
+                    "11db"
+                ],
+                [
+                    "mov ebx, dword ptr [esi]",
+                    "8b1e"
+                ]
+            ],
+            "ecx": [
+                [
+                    "adc ecx, ecx",
+                    "11c9"
+                ]
+            ],
+            "esi": [
+                [
+                    "sub esi, -4",
+                    "83eefc"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c661": {
+        "start_addr": "0x41c661",
+        "end_addr": "0x41c66c",
+        "called_time": 479,
+        "REN": 0.0012730423319796738,
+        "type": "a",
+        "nextbb": [
+            4310636,
+            4310668
+        ],
+        "ins_num": 5,
+        "bytes": "8b1e83eefc11db11c97520",
+        "controlsize": 2,
+        "instructions": [
+            "mov ebx, dword ptr [esi]",
+            "sub esi, -4",
+            "adc ebx, ebx",
+            "adc ecx, ecx",
+            "jne 0x41c68c"
+        ],
+        "variable": [
+            "ecx",
+            "ebx",
+            "esi"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "adc ecx, ecx",
+                    "11c9"
+                ]
+            ],
+            "ebx": [
+                [
+                    "adc ebx, ebx",
+                    "11db"
+                ],
+                [
+                    "mov ebx, dword ptr [esi]",
+                    "8b1e"
+                ]
+            ],
+            "esi": [
+                [
+                    "sub esi, -4",
+                    "83eefc"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c671": {
+        "start_addr": "0x41c671",
+        "end_addr": "0x41c67e",
+        "called_time": 255,
+        "REN": 0.0006777156464609955,
+        "type": "a",
+        "nextbb": [
+            4310654,
+            4310637
+        ],
+        "ins_num": 6,
+        "bytes": "8b1e83eefc11db11c901db73ef",
+        "controlsize": 2,
+        "instructions": [
+            "mov ebx, dword ptr [esi]",
+            "sub esi, -4",
+            "adc ebx, ebx",
+            "adc ecx, ecx",
+            "add ebx, ebx",
+            "jae 0x41c66d"
+        ],
+        "variable": [
+            "ebx",
+            "ecx",
+            "esi"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, ebx",
+                    "01db"
+                ],
+                [
+                    "adc ebx, ebx",
+                    "11db"
+                ],
+                [
+                    "mov ebx, dword ptr [esi]",
+                    "8b1e"
+                ]
+            ],
+            "ecx": [
+                [
+                    "adc ecx, ecx",
+                    "11c9"
+                ]
+            ],
+            "esi": [
+                [
+                    "sub esi, -4",
+                    "83eefc"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c680": {
+        "start_addr": "0x41c680",
+        "end_addr": "0x41c689",
+        "called_time": 245,
+        "REN": 0.0006511385622860545,
+        "type": "a",
+        "nextbb": [
+            4310665,
+            4310637
+        ],
+        "ins_num": 4,
+        "bytes": "8b1e83eefc11db73e4",
+        "controlsize": 2,
+        "instructions": [
+            "mov ebx, dword ptr [esi]",
+            "sub esi, -4",
+            "adc ebx, ebx",
+            "jae 0x41c66d"
+        ],
+        "variable": [
+            "ebx",
+            "esi"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "adc ebx, ebx",
+                    "11db"
+                ],
+                [
+                    "mov ebx, dword ptr [esi]",
+                    "8b1e"
+                ]
+            ],
+            "esi": [
+                [
+                    "sub esi, -4",
+                    "83eefc"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c719": {
+        "start_addr": "0x41c719",
+        "end_addr": "0x41c720",
+        "called_time": 67,
+        "REN": 0.00017806646397210469,
+        "type": "m",
+        "nextbb": [
+            4310780,
+            4310816
+        ],
+        "ins_num": 4,
+        "bytes": "8a074708c074dc",
+        "controlsize": 2,
+        "instructions": [
+            "mov al, byte ptr [edi]",
+            "inc edi",
+            "or al, al",
+            "je 0x41c6fc"
+        ],
+        "variable": [
+            "eax",
+            "edi"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "or al, al",
+                    "08c0"
+                ],
+                [
+                    "mov al, byte ptr [edi]",
+                    "8a07"
+                ]
+            ],
+            "edi": [
+                [
+                    "inc edi",
+                    "47"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c720": {
+        "start_addr": "0x41c720",
+        "end_addr": "0x41c72d",
+        "called_time": 67,
+        "REN": 0.00017806646397210469,
+        "type": "m",
+        "nextbb": [
+            4310822,
+            4310820
+        ],
+        "ins_num": 29,
+        "bytes": "89f95748f2ae55ff962cc00100",
+        "controlsize": 6,
+        "instructions": [
+            "mov ecx, edi",
+            "push edi",
+            "dec eax",
+            "repne scasb al, byte ptr es:[edi]",
+            "push ebp",
+            "call dword ptr [esi + 0x1c02c]"
+        ],
+        "variable": [
+            "[esp]",
+            "eax",
+            "ecx"
+        ],
+        "slices": {
+            "[esp]": [
+                [
+                    "push ebp",
+                    "55"
+                ]
+            ],
+            "eax": [
+                [
+                    "repne scasb al, byte ptr es:[edi]",
+                    "f2ae"
+                ],
+                [
+                    "dec eax",
+                    "48"
+                ]
+            ],
+            "ecx": [
+                [
+                    "mov ecx, edi",
+                    "89f9"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c72d": {
+        "start_addr": "0x41c72d",
+        "end_addr": "0x41c731",
+        "called_time": 67,
+        "REN": 0.00017806646397210469,
+        "type": "m",
+        "nextbb": [
+            4310840,
+            4310833
+        ],
+        "ins_num": 2,
+        "bytes": "09c07407",
+        "controlsize": 2,
+        "instructions": [
+            "or eax, eax",
+            "je 0x41c738"
+        ],
+        "variable": [
+            "eax"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "or eax, eax",
+                    "09c0"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c731": {
+        "start_addr": "0x41c731",
+        "end_addr": "0x41c738",
+        "called_time": 67,
+        "REN": 0.00017806646397210469,
+        "type": "m",
+        "nextbb": [
+            4310809
+        ],
+        "ins_num": 3,
+        "bytes": "890383c304ebe1",
+        "controlsize": 2,
+        "instructions": [
+            "mov dword ptr [ebx], eax",
+            "add ebx, 4",
+            "jmp 0x41c719"
+        ],
+        "variable": [
+            "ebx",
+            "[ebx]"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "add ebx, 4",
+                    "83c304"
+                ]
+            ],
+            "[ebx]": [
+                [
+                    "mov dword ptr [ebx], eax",
+                    "8903"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c5f0": {
+        "start_addr": "0x41c5f0",
+        "end_addr": "0x41c602",
+        "called_time": 2,
+        "REN": 5.3154168349882e-06,
+        "type": "a",
+        "nextbb": [
+            4310546
+        ],
+        "ins_num": 6,
+        "bytes": "60be000041008dbe0010ffff5783cdffeb10",
+        "controlsize": 2,
+        "instructions": [
+            "pushal ",
+            "mov esi, 0x410000",
+            "lea edi, [esi - 0xf000]",
+            "push edi",
+            "or ebp, 0xffffffff",
+            "jmp 0x41c612"
+        ],
+        "variable": [
+            "ebp",
+            "[esp]",
+            "esi",
+            "esp"
+        ],
+        "slices": {
+            "ebp": [
+                [
+                    "or ebp, 0xffffffff",
+                    "83cdff"
+                ]
+            ],
+            "[esp]": [
+                [
+                    "push edi",
+                    "57"
+                ],
+                [
+                    "lea edi, [esi - 0xf000]",
+                    "8dbe0010ffff"
+                ]
+            ],
+            "esi": [
+                [
+                    "mov esi, 0x410000",
+                    "be00004100"
+                ]
+            ],
+            "esp": [
+                [
+                    "pushal ",
+                    "60"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c6c2": {
+        "start_addr": "0x41c6c2",
+        "end_addr": "0x41c6d3",
+        "called_time": 2,
+        "REN": 5.3154168349882e-06,
+        "type": "a",
+        "nextbb": [
+            4310739,
+            4310730
+        ],
+        "ins_num": 8,
+        "bytes": "5e89f7b9be0500008a07472ce83c0177f7",
+        "controlsize": 2,
+        "instructions": [
+            "pop esi",
+            "mov edi, esi",
+            "mov ecx, 0x5be",
+            "mov al, byte ptr [edi]",
+            "inc edi",
+            "sub al, 0xe8",
+            "cmp al, 1",
+            "ja 0x41c6ca"
+        ],
+        "variable": [
+            "eax",
+            "edi",
+            "ecx"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "sub al, 0xe8",
+                    "2ce8"
+                ],
+                [
+                    "mov al, byte ptr [edi]",
+                    "8a07"
+                ]
+            ],
+            "edi": [
+                [
+                    "inc edi",
+                    "47"
+                ],
+                [
+                    "mov edi, esi",
+                    "89f7"
+                ],
+                [
+                    "pop esi",
+                    "5e"
+                ]
+            ],
+            "ecx": [
+                [
+                    "mov ecx, 0x5be",
+                    "b9be050000"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c6f6": {
+        "start_addr": "0x41c6f6",
+        "end_addr": "0x41c702",
+        "called_time": 2,
+        "REN": 5.3154168349882e-06,
+        "type": "am",
+        "nextbb": [
+            4310846,
+            4310786
+        ],
+        "ins_num": 4,
+        "bytes": "8dbe00a001008b0709c0743c",
+        "controlsize": 2,
+        "instructions": [
+            "lea edi, [esi + 0x1a000]",
+            "mov eax, dword ptr [edi]",
+            "or eax, eax",
+            "je 0x41c73e"
+        ],
+        "variable": [
+            "eax",
+            "edi"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "or eax, eax",
+                    "09c0"
+                ],
+                [
+                    "mov eax, dword ptr [edi]",
+                    "8b07"
+                ]
+            ],
+            "edi": [
+                [
+                    "lea edi, [esi + 0x1a000]",
+                    "8dbe00a00100"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c6fc": {
+        "start_addr": "0x41c6fc",
+        "end_addr": "0x41c702",
+        "called_time": 2,
+        "REN": 5.3154168349882e-06,
+        "type": "m",
+        "nextbb": [
+            4310846,
+            4310786
+        ],
+        "ins_num": 3,
+        "bytes": "8b0709c0743c",
+        "controlsize": 2,
+        "instructions": [
+            "mov eax, dword ptr [edi]",
+            "or eax, eax",
+            "je 0x41c73e"
+        ],
+        "variable": [
+            "eax"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "or eax, eax",
+                    "09c0"
+                ],
+                [
+                    "mov eax, dword ptr [edi]",
+                    "8b07"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c702": {
+        "start_addr": "0x41c702",
+        "end_addr": "0x41c718",
+        "called_time": 2,
+        "REN": 5.3154168349882e-06,
+        "type": "am",
+        "nextbb": [],
+        "ins_num": 6,
+        "bytes": "8b5f048d843000c0010001f35083c708ff9628c00100",
+        "controlsize": 6,
+        "instructions": [
+            "mov ebx, dword ptr [edi + 4]",
+            "lea eax, [eax + esi + 0x1c000]",
+            "add ebx, esi",
+            "push eax",
+            "add edi, 8",
+            "call dword ptr [esi + 0x1c028]"
+        ],
+        "variable": [
+            "edi",
+            "[esp]",
+            "ebx"
+        ],
+        "slices": {
+            "edi": [
+                [
+                    "add edi, 8",
+                    "83c708"
+                ]
+            ],
+            "[esp]": [
+                [
+                    "push eax",
+                    "50"
+                ],
+                [
+                    "lea eax, [eax + esi + 0x1c000]",
+                    "8d843000c00100"
+                ]
+            ],
+            "ebx": [
+                [
+                    "add ebx, esi",
+                    "01f3"
+                ],
+                [
+                    "mov ebx, dword ptr [edi + 4]",
+                    "8b5f04"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c718": {
+        "start_addr": "0x41c718",
+        "end_addr": "0x41c720",
+        "called_time": 2,
+        "REN": 5.3154168349882e-06,
+        "type": "m",
+        "nextbb": [
+            4310780,
+            4310816
+        ],
+        "ins_num": 5,
+        "bytes": "958a074708c074dc",
+        "controlsize": 2,
+        "instructions": [
+            "xchg eax, ebp",
+            "mov al, byte ptr [edi]",
+            "inc edi",
+            "or al, al",
+            "je 0x41c6fc"
+        ],
+        "variable": [
+            "eax",
+            "edi",
+            "ebp"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "or al, al",
+                    "08c0"
+                ],
+                [
+                    "mov al, byte ptr [edi]",
+                    "8a07"
+                ]
+            ],
+            "edi": [
+                [
+                    "inc edi",
+                    "47"
+                ]
+            ],
+            "ebp": [
+                [
+                    "xchg eax, ebp",
+                    "95"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41c73e": {
+        "start_addr": "0x41c73e",
+        "end_addr": "0x41c744",
+        "called_time": 2,
+        "REN": 5.3154168349882e-06,
+        "type": "am",
+        "nextbb": [
+            4199377
+        ],
+        "ins_num": 2,
+        "bytes": "61e98d4cfeff",
+        "controlsize": 5,
+        "instructions": [
+            "popal ",
+            "jmp 0x4013d1"
+        ],
+        "variable": [
+            "edi"
+        ],
+        "slices": {
+            "edi": [
+                [
+                    "popal ",
+                    "61"
+                ]
+            ]
+        }
+    }
+}

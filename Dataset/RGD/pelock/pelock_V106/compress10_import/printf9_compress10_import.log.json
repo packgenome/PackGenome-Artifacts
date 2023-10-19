@@ -1,0 +1,260 @@
+{
+    "FileName": "printf9_compress10_import.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41b1df": {
+        "start_addr": "0x41b1df",
+        "end_addr": "0x41b1ee",
+        "called_time": 1025,
+        "REN": 0.10001951600312256,
+        "type": "nm",
+        "nextbb": [
+            4305392
+        ],
+        "ins_num": 4,
+        "bytes": "f383c777f280e927f7d7e802000000",
+        "controlsize": 5,
+        "instructions": [
+            "add edi, 0x77",
+            "sub cl, 0x27",
+            "not edi",
+            "call 0x41b1f0"
+        ],
+        "variable": [
+            "edi",
+            "ecx"
+        ],
+        "slices": {
+            "edi": [
+                [
+                    "not edi",
+                    "f7d7"
+                ],
+                [
+                    "add edi, 0x77",
+                    "f383c777"
+                ]
+            ],
+            "ecx": [
+                [
+                    "sub cl, 0x27",
+                    "f280e927"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1f0": {
+        "start_addr": "0x41b1f0",
+        "end_addr": "0x41b1f3",
+        "called_time": 1025,
+        "REN": 0.10001951600312256,
+        "type": "nm",
+        "nextbb": [
+            4305397
+        ],
+        "ins_num": 2,
+        "bytes": "5feb02",
+        "controlsize": 2,
+        "instructions": [
+            "pop edi",
+            "jmp 0x41b1f5"
+        ],
+        "variable": [
+            "edi"
+        ],
+        "slices": {
+            "edi": [
+                [
+                    "pop edi",
+                    "5f"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1f5": {
+        "start_addr": "0x41b1f5",
+        "end_addr": "0x41b206",
+        "called_time": 1025,
+        "REN": 0.10001951600312256,
+        "type": "nm",
+        "nextbb": [
+            4305415
+        ],
+        "ins_num": 7,
+        "bytes": "32c8f383cf378b3bf3c1ee0f880bf87301",
+        "controlsize": 2,
+        "instructions": [
+            "xor cl, al",
+            "or edi, 0x37",
+            "mov edi, dword ptr [ebx]",
+            "shr esi, 0xf",
+            "mov byte ptr [ebx], cl",
+            "clc ",
+            "jae 0x41b207"
+        ],
+        "variable": [
+            "[ebx]",
+            "esi",
+            "edi"
+        ],
+        "slices": {
+            "[ebx]": [
+                [
+                    "mov byte ptr [ebx], cl",
+                    "880b"
+                ],
+                [
+                    "xor cl, al",
+                    "32c8"
+                ]
+            ],
+            "esi": [
+                [
+                    "shr esi, 0xf",
+                    "f3c1ee0f"
+                ]
+            ],
+            "edi": [
+                [
+                    "mov edi, dword ptr [ebx]",
+                    "8b3b"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b207": {
+        "start_addr": "0x41b207",
+        "end_addr": "0x41b20a",
+        "called_time": 1025,
+        "REN": 0.10001951600312256,
+        "type": "nm",
+        "nextbb": [
+            4305418,
+            4305419
+        ],
+        "ins_num": 2,
+        "bytes": "f87301",
+        "controlsize": 2,
+        "instructions": [
+            "clc ",
+            "jae 0x41b20b"
+        ],
+        "variable": [],
+        "slices": {}
+    },
+    "bytes_0x41b20e": {
+        "start_addr": "0x41b20e",
+        "end_addr": "0x41b211",
+        "called_time": 1025,
+        "REN": 0.10001951600312256,
+        "type": "nm",
+        "nextbb": [
+            4305427
+        ],
+        "ins_num": 2,
+        "bytes": "43eb02",
+        "controlsize": 2,
+        "instructions": [
+            "inc ebx",
+            "jmp 0x41b213"
+        ],
+        "variable": [
+            "ebx"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "inc ebx",
+                    "43"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b213": {
+        "start_addr": "0x41b213",
+        "end_addr": "0x41b21c",
+        "called_time": 1025,
+        "REN": 0.10001951600312256,
+        "type": "nm",
+        "nextbb": [
+            4305437
+        ],
+        "ins_num": 2,
+        "bytes": "f281ee92000000eb01",
+        "controlsize": 2,
+        "instructions": [
+            "sub esi, 0x92",
+            "jmp 0x41b21d"
+        ],
+        "variable": [
+            "esi"
+        ],
+        "slices": {
+            "esi": [
+                [
+                    "sub esi, 0x92",
+                    "f281ee92000000"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b21d": {
+        "start_addr": "0x41b21d",
+        "end_addr": "0x41b221",
+        "called_time": 1025,
+        "REN": 0.10001951600312256,
+        "type": "nm",
+        "nextbb": [
+            4305441,
+            4305442
+        ],
+        "ins_num": 3,
+        "bytes": "48f87301",
+        "controlsize": 2,
+        "instructions": [
+            "dec eax",
+            "clc ",
+            "jae 0x41b222"
+        ],
+        "variable": [
+            "eax"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "dec eax",
+                    "48"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b226": {
+        "start_addr": "0x41b226",
+        "end_addr": "0x41b22f",
+        "called_time": 1025,
+        "REN": 0.10001951600312256,
+        "type": "nm",
+        "nextbb": [
+            4305457
+        ],
+        "ins_num": 3,
+        "bytes": "f283ef2383f800eb02",
+        "controlsize": 2,
+        "instructions": [
+            "sub edi, 0x23",
+            "cmp eax, 0",
+            "jmp 0x41b231"
+        ],
+        "variable": [
+            "edi"
+        ],
+        "slices": {
+            "edi": [
+                [
+                    "sub edi, 0x23",
+                    "f283ef23"
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "FileName": "sort2_compress10.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41b1d8": {
+        "start_addr": "0x41b1d8",
+        "end_addr": "0x41b1e8",
+        "called_time": 1025,
+        "REN": 0.25012201073694484,
+        "type": "nm",
+        "nextbb": [
+            4305385
+        ],
+        "ins_num": 5,
+        "bytes": "f281c6e23d51d0f383ce4f880bf87301",
+        "controlsize": 2,
+        "instructions": [
+            "add esi, 0xd0513de2",
+            "or esi, 0x4f",
+            "mov byte ptr [ebx], cl",
+            "clc ",
+            "jae 0x41b1e9"
+        ],
+        "variable": [
+            "[ebx]",
+            "esi"
+        ],
+        "slices": {
+            "[ebx]": [
+                [
+                    "mov byte ptr [ebx], cl",
+                    "880b"
+                ]
+            ],
+            "esi": [
+                [
+                    "or esi, 0x4f",
+                    "f383ce4f"
+                ],
+                [
+                    "add esi, 0xd0513de2",
+                    "f281c6e23d51d0"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1e9": {
+        "start_addr": "0x41b1e9",
+        "end_addr": "0x41b1ed",
+        "called_time": 1025,
+        "REN": 0.25012201073694484,
+        "type": "nm",
+        "nextbb": [
+            4305390
+        ],
+        "ins_num": 2,
+        "bytes": "03f2eb01",
+        "controlsize": 2,
+        "instructions": [
+            "add esi, edx",
+            "jmp 0x41b1ee"
+        ],
+        "variable": [
+            "esi"
+        ],
+        "slices": {
+            "esi": [
+                [
+                    "add esi, edx",
+                    "03f2"
+                ]
+            ]
+        }
+    }
+}

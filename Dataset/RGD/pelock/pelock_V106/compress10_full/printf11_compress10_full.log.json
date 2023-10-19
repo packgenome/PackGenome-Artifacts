@@ -1,0 +1,175 @@
+{
+    "FileName": "printf11_compress10_full.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41b1da": {
+        "start_addr": "0x41b1da",
+        "end_addr": "0x41b1ed",
+        "called_time": 1025,
+        "REN": 0.16669377134493413,
+        "type": "nm",
+        "nextbb": [
+            4305390
+        ],
+        "ins_num": 8,
+        "bytes": "1bcb881681e920136833f2f7d90bc148f87301",
+        "controlsize": 2,
+        "instructions": [
+            "sbb ecx, ebx",
+            "mov byte ptr [esi], dl",
+            "sub ecx, 0x33681320",
+            "neg ecx",
+            "or eax, ecx",
+            "dec eax",
+            "clc ",
+            "jae 0x41b1ee"
+        ],
+        "variable": [
+            "eax",
+            "[esi]"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "dec eax",
+                    "48"
+                ],
+                [
+                    "or eax, ecx",
+                    "0bc1"
+                ],
+                [
+                    "neg ecx",
+                    "f2f7d9"
+                ],
+                [
+                    "sub ecx, 0x33681320",
+                    "81e920136833"
+                ],
+                [
+                    "sbb ecx, ebx",
+                    "1bcb"
+                ]
+            ],
+            "[esi]": [
+                [
+                    "mov byte ptr [esi], dl",
+                    "8816"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1ee": {
+        "start_addr": "0x41b1ee",
+        "end_addr": "0x41b1f5",
+        "called_time": 1025,
+        "REN": 0.16669377134493413,
+        "type": "nm",
+        "nextbb": [
+            4305399
+        ],
+        "ins_num": 3,
+        "bytes": "f34683c855eb02",
+        "controlsize": 2,
+        "instructions": [
+            "inc esi",
+            "or eax, 0x55",
+            "jmp 0x41b1f7"
+        ],
+        "variable": [
+            "eax",
+            "esi"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "or eax, 0x55",
+                    "83c855"
+                ]
+            ],
+            "esi": [
+                [
+                    "inc esi",
+                    "f346"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1f7": {
+        "start_addr": "0x41b1f7",
+        "end_addr": "0x41b1fa",
+        "called_time": 1025,
+        "REN": 0.16669377134493413,
+        "type": "nm",
+        "nextbb": [
+            4305403,
+            4305402
+        ],
+        "ins_num": 2,
+        "bytes": "f97201",
+        "controlsize": 2,
+        "instructions": [
+            "stc ",
+            "jb 0x41b1fb"
+        ],
+        "variable": [],
+        "slices": {}
+    },
+    "bytes_0x41b1fb": {
+        "start_addr": "0x41b1fb",
+        "end_addr": "0x41b1fe",
+        "called_time": 1025,
+        "REN": 0.16669377134493413,
+        "type": "nm",
+        "nextbb": [
+            4305406,
+            4305407
+        ],
+        "ins_num": 2,
+        "bytes": "f87301",
+        "controlsize": 2,
+        "instructions": [
+            "clc ",
+            "jae 0x41b1ff"
+        ],
+        "variable": [],
+        "slices": {}
+    },
+    "bytes_0x41b1ff": {
+        "start_addr": "0x41b1ff",
+        "end_addr": "0x41b207",
+        "called_time": 1025,
+        "REN": 0.16669377134493413,
+        "type": "nm",
+        "nextbb": [
+            4305416
+        ],
+        "ins_num": 4,
+        "bytes": "83c03df34bf97201",
+        "controlsize": 2,
+        "instructions": [
+            "add eax, 0x3d",
+            "dec ebx",
+            "stc ",
+            "jb 0x41b208"
+        ],
+        "variable": [
+            "ebx",
+            "eax"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "dec ebx",
+                    "f34b"
+                ]
+            ],
+            "eax": [
+                [
+                    "add eax, 0x3d",
+                    "83c03d"
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,126 @@
+{
+    "FileName": "exepacked_dat2file",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x40f220": {
+        "start_addr": "0x40f220",
+        "end_addr": "0x40f22e",
+        "called_time": 3105,
+        "REN": 0.08393026084606028,
+        "type": "nm",
+        "nextbb": [
+            4256302,
+            4256216
+        ],
+        "ins_num": 9,
+        "bytes": "8a1e46881f47d1ea48903bce75aa",
+        "controlsize": 2,
+        "instructions": [
+            "mov bl, byte ptr [esi]",
+            "inc esi",
+            "mov byte ptr [edi], bl",
+            "inc edi",
+            "shr edx, 1",
+            "dec eax",
+            "nop ",
+            "cmp ecx, esi",
+            "jne 0x40f1d8"
+        ],
+        "variable": [
+            "eax",
+            "edx",
+            "edi",
+            "[edi]",
+            "esi"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "dec eax",
+                    "48"
+                ]
+            ],
+            "edx": [
+                [
+                    "shr edx, 1",
+                    "d1ea"
+                ]
+            ],
+            "edi": [
+                [
+                    "inc edi",
+                    "47"
+                ]
+            ],
+            "[edi]": [
+                [
+                    "mov byte ptr [edi], bl",
+                    "881f"
+                ],
+                [
+                    "mov bl, byte ptr [esi]",
+                    "8a1e"
+                ]
+            ],
+            "esi": [
+                [
+                    "inc esi",
+                    "46"
+                ]
+            ]
+        }
+    },
+    "bytes_0x40f20a": {
+        "start_addr": "0x40f20a",
+        "end_addr": "0x40f21c",
+        "called_time": 868,
+        "REN": 0.02346263008514664,
+        "type": "m",
+        "nextbb": [
+            4256273,
+            4256271
+        ],
+        "ins_num": 10,
+        "bytes": "8bf7412bf3f3a48b75fc8b4df883c602eb0a",
+        "controlsize": 2,
+        "instructions": [
+            "mov esi, edi",
+            "inc ecx",
+            "sub esi, ebx",
+            "rep movsb byte ptr es:[edi], byte ptr [esi]",
+            "mov esi, dword ptr [ebp - 4]",
+            "mov ecx, dword ptr [ebp - 8]",
+            "add esi, 2",
+            "jmp 0x40f226"
+        ],
+        "variable": [
+            "esi",
+            "ecx",
+            "[edi], byte ptr [esi]"
+        ],
+        "slices": {
+            "esi": [
+                [
+                    "add esi, 2",
+                    "83c602"
+                ],
+                [
+                    "mov esi, dword ptr [ebp - 4]",
+                    "8b75fc"
+                ]
+            ],
+            "ecx": [
+                [
+                    "mov ecx, dword ptr [ebp - 8]",
+                    "8b4df8"
+                ]
+            ],
+            "[edi], byte ptr [esi]": [
+                [
+                    "rep movsb byte ptr es:[edi], byte ptr [esi]",
+                    "f3a4"
+                ]
+            ]
+        }
+    }
+}

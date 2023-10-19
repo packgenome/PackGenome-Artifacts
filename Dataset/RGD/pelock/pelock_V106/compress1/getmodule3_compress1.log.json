@@ -1,0 +1,107 @@
+{
+    "FileName": "getmodule3_compress1.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41b1ee": {
+        "start_addr": "0x41b1ee",
+        "end_addr": "0x41b1f9",
+        "called_time": 1025,
+        "REN": 0.2000780792504392,
+        "type": "nm",
+        "nextbb": [
+            4305402
+        ],
+        "ins_num": 4,
+        "bytes": "c1c0088816f2c1c90aeb01",
+        "controlsize": 2,
+        "instructions": [
+            "rol eax, 8",
+            "mov byte ptr [esi], dl",
+            "ror ecx, 0xa",
+            "jmp 0x41b1fa"
+        ],
+        "variable": [
+            "ecx",
+            "[esi]",
+            "eax"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "ror ecx, 0xa",
+                    "f2c1c90a"
+                ]
+            ],
+            "[esi]": [
+                [
+                    "mov byte ptr [esi], dl",
+                    "8816"
+                ]
+            ],
+            "eax": [
+                [
+                    "rol eax, 8",
+                    "c1c008"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b200": {
+        "start_addr": "0x41b200",
+        "end_addr": "0x41b204",
+        "called_time": 1025,
+        "REN": 0.2000780792504392,
+        "type": "nm",
+        "nextbb": [
+            4305412,
+            4305413
+        ],
+        "ins_num": 3,
+        "bytes": "59f87301",
+        "controlsize": 2,
+        "instructions": [
+            "pop ecx",
+            "clc ",
+            "jae 0x41b205"
+        ],
+        "variable": [
+            "ecx"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "pop ecx",
+                    "59"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b205": {
+        "start_addr": "0x41b205",
+        "end_addr": "0x41b208",
+        "called_time": 1025,
+        "REN": 0.2000780792504392,
+        "type": "nm",
+        "nextbb": [
+            4305418
+        ],
+        "ins_num": 2,
+        "bytes": "46eb02",
+        "controlsize": 2,
+        "instructions": [
+            "inc esi",
+            "jmp 0x41b20a"
+        ],
+        "variable": [
+            "esi"
+        ],
+        "slices": {
+            "esi": [
+                [
+                    "inc esi",
+                    "46"
+                ]
+            ]
+        }
+    }
+}

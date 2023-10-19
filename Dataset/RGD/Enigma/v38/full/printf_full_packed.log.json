@@ -1,0 +1,275 @@
+{
+    "FileName": "printf_full_packed.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x7e6abc": {
+        "start_addr": "0x7e6abc",
+        "end_addr": "0x7e6ac6",
+        "called_time": 1402,
+        "REN": 0.9915134370579916,
+        "type": "m",
+        "nextbb": [
+            8284870,
+            8284860
+        ],
+        "ins_num": 4,
+        "bytes": "301040490f85f6ffffff",
+        "controlsize": 6,
+        "instructions": [
+            "xor byte ptr [eax], dl",
+            "inc eax",
+            "dec ecx",
+            "jne 0x7e6abc"
+        ],
+        "variable": [
+            "ecx",
+            "eax",
+            "[eax]"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "dec ecx",
+                    "49"
+                ]
+            ],
+            "eax": [
+                [
+                    "inc eax",
+                    "40"
+                ]
+            ],
+            "[eax]": [
+                [
+                    "xor byte ptr [eax], dl",
+                    "3010"
+                ]
+            ]
+        }
+    },
+    "bytes_0x402e3e": {
+        "start_addr": "0x402e3e",
+        "end_addr": "0x402e4e",
+        "called_time": 2,
+        "REN": 0.0014144271570014145,
+        "type": "m",
+        "nextbb": [
+            4206159
+        ],
+        "ins_num": 5,
+        "bytes": "558bec83c4f0b800104000e801000000",
+        "controlsize": 5,
+        "instructions": [
+            "push ebp",
+            "mov ebp, esp",
+            "add esp, -0x10",
+            "mov eax, 0x401000",
+            "call 0x402e4f"
+        ],
+        "variable": [
+            "eax",
+            "esp",
+            "ebp",
+            "[esp]"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "mov eax, 0x401000",
+                    "b800104000"
+                ]
+            ],
+            "esp": [
+                [
+                    "add esp, -0x10",
+                    "83c4f0"
+                ]
+            ],
+            "ebp": [
+                [
+                    "mov ebp, esp",
+                    "8bec"
+                ]
+            ],
+            "[esp]": [
+                [
+                    "push ebp",
+                    "55"
+                ]
+            ]
+        }
+    },
+    "bytes_0x402e4f": {
+        "start_addr": "0x402e4f",
+        "end_addr": "0x402e5a",
+        "called_time": 2,
+        "REN": 0.0014144271570014145,
+        "type": "m",
+        "nextbb": [
+            8284728
+        ],
+        "ins_num": 4,
+        "bytes": "83c4108be55de9de3b3e00",
+        "controlsize": 5,
+        "instructions": [
+            "add esp, 0x10",
+            "mov esp, ebp",
+            "pop ebp",
+            "jmp 0x7e6a38"
+        ],
+        "variable": [
+            "ebp",
+            "esp"
+        ],
+        "slices": {
+            "ebp": [
+                [
+                    "pop ebp",
+                    "5d"
+                ]
+            ],
+            "esp": [
+                [
+                    "mov esp, ebp",
+                    "8be5"
+                ]
+            ]
+        }
+    },
+    "bytes_0x7e6a38": {
+        "start_addr": "0x7e6a38",
+        "end_addr": "0x7e6a3e",
+        "called_time": 2,
+        "REN": 0.0014144271570014145,
+        "type": "m",
+        "nextbb": [
+            8284734
+        ],
+        "ins_num": 2,
+        "bytes": "60e800000000",
+        "controlsize": 5,
+        "instructions": [
+            "pushal ",
+            "call 0x7e6a3e"
+        ],
+        "variable": [
+            "esp"
+        ],
+        "slices": {
+            "esp": [
+                [
+                    "pushal ",
+                    "60"
+                ]
+            ]
+        }
+    },
+    "bytes_0x7e6a3e": {
+        "start_addr": "0x7e6a3e",
+        "end_addr": "0x7e6a50",
+        "called_time": 2,
+        "REN": 0.0014144271570014145,
+        "type": "m",
+        "nextbb": [
+            8284828
+        ],
+        "ins_num": 4,
+        "bytes": "5d81ed0600000081ed386a3e00e94c000000",
+        "controlsize": 5,
+        "instructions": [
+            "pop ebp",
+            "sub ebp, 6",
+            "sub ebp, 0x3e6a38",
+            "jmp 0x7e6a9c"
+        ],
+        "variable": [
+            "ebp"
+        ],
+        "slices": {
+            "ebp": [
+                [
+                    "sub ebp, 0x3e6a38",
+                    "81ed386a3e00"
+                ],
+                [
+                    "sub ebp, 6",
+                    "81ed06000000"
+                ],
+                [
+                    "pop ebp",
+                    "5d"
+                ]
+            ]
+        }
+    },
+    "bytes_0x7e6aa5": {
+        "start_addr": "0x7e6aa5",
+        "end_addr": "0x7e6ac6",
+        "called_time": 2,
+        "REN": 0.0014144271570014145,
+        "type": "m",
+        "nextbb": [
+            8284870,
+            8284860
+        ],
+        "ins_num": 9,
+        "bytes": "b8386a3e0003c581c093000000b97a050000ba35f0e5e7301040490f85f6ffffff",
+        "controlsize": 6,
+        "instructions": [
+            "mov eax, 0x3e6a38",
+            "add eax, ebp",
+            "add eax, 0x93",
+            "mov ecx, 0x57a",
+            "mov edx, 0xe7e5f035",
+            "xor byte ptr [eax], dl",
+            "inc eax",
+            "dec ecx",
+            "jne 0x7e6abc"
+        ],
+        "variable": [
+            "ecx",
+            "eax",
+            "[eax]"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "dec ecx",
+                    "49"
+                ],
+                [
+                    "mov ecx, 0x57a",
+                    "b97a050000"
+                ]
+            ],
+            "eax": [
+                [
+                    "inc eax",
+                    "40"
+                ],
+                [
+                    "add eax, 0x93",
+                    "81c093000000"
+                ],
+                [
+                    "add eax, ebp",
+                    "03c5"
+                ],
+                [
+                    "mov eax, 0x3e6a38",
+                    "b8386a3e00"
+                ]
+            ],
+            "[eax]": [
+                [
+                    "xor byte ptr [eax], dl",
+                    "3010"
+                ],
+                [
+                    "mov edx, 0xe7e5f035",
+                    "ba35f0e5e7"
+                ]
+            ]
+        }
+    }
+}

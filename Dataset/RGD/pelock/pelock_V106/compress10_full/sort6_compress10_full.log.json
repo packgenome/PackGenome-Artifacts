@@ -1,0 +1,111 @@
+{
+    "FileName": "sort6_compress10_full.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41b1c9": {
+        "start_addr": "0x41b1c9",
+        "end_addr": "0x41b1d3",
+        "called_time": 1025,
+        "REN": 0.25006099048548425,
+        "type": "nm",
+        "nextbb": [
+            4305364
+        ],
+        "ins_num": 3,
+        "bytes": "880bc1ce15e801000000",
+        "controlsize": 5,
+        "instructions": [
+            "mov byte ptr [ebx], cl",
+            "ror esi, 0x15",
+            "call 0x41b1d4"
+        ],
+        "variable": [
+            "esi",
+            "[ebx]"
+        ],
+        "slices": {
+            "esi": [
+                [
+                    "ror esi, 0x15",
+                    "c1ce15"
+                ]
+            ],
+            "[ebx]": [
+                [
+                    "mov byte ptr [ebx], cl",
+                    "880b"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1d4": {
+        "start_addr": "0x41b1d4",
+        "end_addr": "0x41b1e0",
+        "called_time": 1025,
+        "REN": 0.25006099048548425,
+        "type": "nm",
+        "nextbb": [
+            4305377
+        ],
+        "ins_num": 4,
+        "bytes": "5ef223f981efbc000000eb01",
+        "controlsize": 2,
+        "instructions": [
+            "pop esi",
+            "and edi, ecx",
+            "sub edi, 0xbc",
+            "jmp 0x41b1e1"
+        ],
+        "variable": [
+            "edi",
+            "esi"
+        ],
+        "slices": {
+            "edi": [
+                [
+                    "sub edi, 0xbc",
+                    "81efbc000000"
+                ],
+                [
+                    "and edi, ecx",
+                    "f223f9"
+                ]
+            ],
+            "esi": [
+                [
+                    "pop esi",
+                    "5e"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1e1": {
+        "start_addr": "0x41b1e1",
+        "end_addr": "0x41b1e6",
+        "called_time": 1025,
+        "REN": 0.25006099048548425,
+        "type": "nm",
+        "nextbb": [
+            4305383
+        ],
+        "ins_num": 3,
+        "bytes": "f243f87301",
+        "controlsize": 2,
+        "instructions": [
+            "inc ebx",
+            "clc ",
+            "jae 0x41b1e7"
+        ],
+        "variable": [
+            "ebx"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "inc ebx",
+                    "f243"
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "FileName": "getmodule12_compress10.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41b1bc": {
+        "start_addr": "0x41b1bc",
+        "end_addr": "0x41b1cc",
+        "called_time": 1025,
+        "REN": 0.2000780792504392,
+        "type": "nm",
+        "nextbb": [
+            4305357
+        ],
+        "ins_num": 5,
+        "bytes": "f283cb3381efb3be6151f28bdff87301",
+        "controlsize": 2,
+        "instructions": [
+            "or ebx, 0x33",
+            "sub edi, 0x5161beb3",
+            "mov ebx, edi",
+            "clc ",
+            "jae 0x41b1cd"
+        ],
+        "variable": [
+            "ebx"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "mov ebx, edi",
+                    "f28bdf"
+                ],
+                [
+                    "sub edi, 0x5161beb3",
+                    "81efb3be6151"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1cd": {
+        "start_addr": "0x41b1cd",
+        "end_addr": "0x41b1d0",
+        "called_time": 1025,
+        "REN": 0.2000780792504392,
+        "type": "nm",
+        "nextbb": [
+            4305361,
+            4305360
+        ],
+        "ins_num": 2,
+        "bytes": "f97201",
+        "controlsize": 2,
+        "instructions": [
+            "stc ",
+            "jb 0x41b1d1"
+        ],
+        "variable": [],
+        "slices": {}
+    },
+    "bytes_0x41b1d4": {
+        "start_addr": "0x41b1d4",
+        "end_addr": "0x41b1de",
+        "called_time": 1025,
+        "REN": 0.2000780792504392,
+        "type": "nm",
+        "nextbb": [
+            4305374,
+            4305375
+        ],
+        "ins_num": 5,
+        "bytes": "80f3d487fa8810f87301",
+        "controlsize": 2,
+        "instructions": [
+            "xor bl, 0xd4",
+            "xchg edx, edi",
+            "mov byte ptr [eax], dl",
+            "clc ",
+            "jae 0x41b1df"
+        ],
+        "variable": [
+            "[eax]",
+            "edi",
+            "ebx"
+        ],
+        "slices": {
+            "[eax]": [
+                [
+                    "mov byte ptr [eax], dl",
+                    "8810"
+                ]
+            ],
+            "edi": [
+                [
+                    "xchg edx, edi",
+                    "87fa"
+                ]
+            ],
+            "ebx": [
+                [
+                    "xor bl, 0xd4",
+                    "80f3d4"
+                ]
+            ]
+        }
+    }
+}

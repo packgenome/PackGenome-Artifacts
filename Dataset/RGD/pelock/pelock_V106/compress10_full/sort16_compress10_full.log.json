@@ -1,0 +1,74 @@
+{
+    "FileName": "sort16_compress10_full.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41b1e2": {
+        "start_addr": "0x41b1e2",
+        "end_addr": "0x41b1ec",
+        "called_time": 1025,
+        "REN": 0.33344176968119715,
+        "type": "nm",
+        "nextbb": [
+            4305390
+        ],
+        "ins_num": 3,
+        "bytes": "0fbec98816e802000000",
+        "controlsize": 5,
+        "instructions": [
+            "movsx ecx, cl",
+            "mov byte ptr [esi], dl",
+            "call 0x41b1ee"
+        ],
+        "variable": [
+            "[esi]",
+            "ecx"
+        ],
+        "slices": {
+            "[esi]": [
+                [
+                    "mov byte ptr [esi], dl",
+                    "8816"
+                ]
+            ],
+            "ecx": [
+                [
+                    "movsx ecx, cl",
+                    "0fbec9"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1ee": {
+        "start_addr": "0x41b1ee",
+        "end_addr": "0x41b1f4",
+        "called_time": 1025,
+        "REN": 0.33344176968119715,
+        "type": "nm",
+        "nextbb": [
+            4305398
+        ],
+        "ins_num": 3,
+        "bytes": "59f3f7d9eb02",
+        "controlsize": 2,
+        "instructions": [
+            "pop ecx",
+            "neg ecx",
+            "jmp 0x41b1f6"
+        ],
+        "variable": [
+            "ecx"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "neg ecx",
+                    "f3f7d9"
+                ],
+                [
+                    "pop ecx",
+                    "59"
+                ]
+            ]
+        }
+    }
+}

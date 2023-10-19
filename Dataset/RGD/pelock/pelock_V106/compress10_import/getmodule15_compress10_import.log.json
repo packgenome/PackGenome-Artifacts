@@ -1,0 +1,181 @@
+{
+    "FileName": "getmodule15_compress10_import.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41b1e2": {
+        "start_addr": "0x41b1e2",
+        "end_addr": "0x41b1e6",
+        "called_time": 1025,
+        "REN": 0.14289697476648544,
+        "type": "nm",
+        "nextbb": [
+            4305384
+        ],
+        "ins_num": 2,
+        "bytes": "f291eb02",
+        "controlsize": 2,
+        "instructions": [
+            "xchg eax, ecx",
+            "jmp 0x41b1e8"
+        ],
+        "variable": [
+            "ecx"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "xchg eax, ecx",
+                    "f291"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1e8": {
+        "start_addr": "0x41b1e8",
+        "end_addr": "0x41b1ed",
+        "called_time": 1025,
+        "REN": 0.14289697476648544,
+        "type": "nm",
+        "nextbb": [
+            4305390,
+            4305389
+        ],
+        "ins_num": 3,
+        "bytes": "8816f97201",
+        "controlsize": 2,
+        "instructions": [
+            "mov byte ptr [esi], dl",
+            "stc ",
+            "jb 0x41b1ee"
+        ],
+        "variable": [
+            "[esi]"
+        ],
+        "slices": {
+            "[esi]": [
+                [
+                    "mov byte ptr [esi], dl",
+                    "8816"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1f4": {
+        "start_addr": "0x41b1f4",
+        "end_addr": "0x41b1fb",
+        "called_time": 1025,
+        "REN": 0.14289697476648544,
+        "type": "nm",
+        "nextbb": [
+            4305404
+        ],
+        "ins_num": 4,
+        "bytes": "59f203c891eb01",
+        "controlsize": 2,
+        "instructions": [
+            "pop ecx",
+            "add ecx, eax",
+            "xchg eax, ecx",
+            "jmp 0x41b1fc"
+        ],
+        "variable": [
+            "ecx"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "xchg eax, ecx",
+                    "91"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1fc": {
+        "start_addr": "0x41b1fc",
+        "end_addr": "0x41b205",
+        "called_time": 1025,
+        "REN": 0.14289697476648544,
+        "type": "nm",
+        "nextbb": [
+            4305414
+        ],
+        "ins_num": 4,
+        "bytes": "f246f30c462bcbeb01",
+        "controlsize": 2,
+        "instructions": [
+            "inc esi",
+            "or al, 0x46",
+            "sub ecx, ebx",
+            "jmp 0x41b206"
+        ],
+        "variable": [
+            "ecx",
+            "eax",
+            "esi"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "sub ecx, ebx",
+                    "2bcb"
+                ]
+            ],
+            "eax": [
+                [
+                    "or al, 0x46",
+                    "f30c46"
+                ]
+            ],
+            "esi": [
+                [
+                    "inc esi",
+                    "f246"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b206": {
+        "start_addr": "0x41b206",
+        "end_addr": "0x41b20f",
+        "called_time": 1025,
+        "REN": 0.14289697476648544,
+        "type": "nm",
+        "nextbb": [
+            4305425
+        ],
+        "ins_num": 4,
+        "bytes": "f333c82414f24beb02",
+        "controlsize": 2,
+        "instructions": [
+            "xor ecx, eax",
+            "and al, 0x14",
+            "dec ebx",
+            "jmp 0x41b211"
+        ],
+        "variable": [
+            "ebx",
+            "eax",
+            "ecx"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "dec ebx",
+                    "f24b"
+                ]
+            ],
+            "eax": [
+                [
+                    "and al, 0x14",
+                    "2414"
+                ]
+            ],
+            "ecx": [
+                [
+                    "xor ecx, eax",
+                    "f333c8"
+                ]
+            ]
+        }
+    }
+}

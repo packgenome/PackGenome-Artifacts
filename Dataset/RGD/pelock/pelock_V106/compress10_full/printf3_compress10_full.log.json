@@ -1,0 +1,99 @@
+{
+    "FileName": "printf3_compress10_full.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41b1eb": {
+        "start_addr": "0x41b1eb",
+        "end_addr": "0x41b1f7",
+        "called_time": 1025,
+        "REN": 0.25006099048548425,
+        "type": "nm",
+        "nextbb": [
+            4305400
+        ],
+        "ins_num": 5,
+        "bytes": "f3c1e217f28bd78810f87301",
+        "controlsize": 2,
+        "instructions": [
+            "shl edx, 0x17",
+            "mov edx, edi",
+            "mov byte ptr [eax], dl",
+            "clc ",
+            "jae 0x41b1f8"
+        ],
+        "variable": [
+            "[eax]"
+        ],
+        "slices": {
+            "[eax]": [
+                [
+                    "mov byte ptr [eax], dl",
+                    "8810"
+                ],
+                [
+                    "mov edx, edi",
+                    "f28bd7"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1f8": {
+        "start_addr": "0x41b1f8",
+        "end_addr": "0x41b201",
+        "called_time": 1025,
+        "REN": 0.25006099048548425,
+        "type": "nm",
+        "nextbb": [
+            4305410
+        ],
+        "ins_num": 4,
+        "bytes": "f285da83e32df87301",
+        "controlsize": 2,
+        "instructions": [
+            "test edx, ebx",
+            "and ebx, 0x2d",
+            "clc ",
+            "jae 0x41b202"
+        ],
+        "variable": [
+            "ebx"
+        ],
+        "slices": {
+            "ebx": [
+                [
+                    "and ebx, 0x2d",
+                    "83e32d"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b202": {
+        "start_addr": "0x41b202",
+        "end_addr": "0x41b207",
+        "called_time": 1025,
+        "REN": 0.25006099048548425,
+        "type": "nm",
+        "nextbb": [
+            4305416
+        ],
+        "ins_num": 3,
+        "bytes": "f240f87301",
+        "controlsize": 2,
+        "instructions": [
+            "inc eax",
+            "clc ",
+            "jae 0x41b208"
+        ],
+        "variable": [
+            "eax"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "inc eax",
+                    "f240"
+                ]
+            ]
+        }
+    }
+}

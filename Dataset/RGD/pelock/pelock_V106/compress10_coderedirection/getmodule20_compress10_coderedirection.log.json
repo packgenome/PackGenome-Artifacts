@@ -1,0 +1,212 @@
+{
+    "FileName": "getmodule20_compress10_coderedirection.log",
+    "Obfuscator": "??",
+    "Version": "??",
+    "bytes_0x41b1d0": {
+        "start_addr": "0x41b1d0",
+        "end_addr": "0x41b1e0",
+        "called_time": 1025,
+        "REN": 0.16669377134493413,
+        "type": "nm",
+        "nextbb": [
+            4305377
+        ],
+        "ins_num": 6,
+        "bytes": "5ef31bf1f31bfe81c1aab796c1f87301",
+        "controlsize": 2,
+        "instructions": [
+            "pop esi",
+            "sbb esi, ecx",
+            "sbb edi, esi",
+            "add ecx, 0xc196b7aa",
+            "clc ",
+            "jae 0x41b1e1"
+        ],
+        "variable": [
+            "ecx",
+            "edi"
+        ],
+        "slices": {
+            "ecx": [
+                [
+                    "add ecx, 0xc196b7aa",
+                    "81c1aab796c1"
+                ]
+            ],
+            "edi": [
+                [
+                    "sbb edi, esi",
+                    "f31bfe"
+                ],
+                [
+                    "sbb esi, ecx",
+                    "f31bf1"
+                ],
+                [
+                    "pop esi",
+                    "5e"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1e1": {
+        "start_addr": "0x41b1e1",
+        "end_addr": "0x41b1e6",
+        "called_time": 1025,
+        "REN": 0.16669377134493413,
+        "type": "nm",
+        "nextbb": [
+            4305384
+        ],
+        "ins_num": 2,
+        "bytes": "6bf735eb02",
+        "controlsize": 2,
+        "instructions": [
+            "imul esi, edi, 0x35",
+            "jmp 0x41b1e8"
+        ],
+        "variable": [
+            "esi"
+        ],
+        "slices": {
+            "esi": [
+                [
+                    "imul esi, edi, 0x35",
+                    "6bf735"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1e8": {
+        "start_addr": "0x41b1e8",
+        "end_addr": "0x41b1f8",
+        "called_time": 1025,
+        "REN": 0.16669377134493413,
+        "type": "nm",
+        "nextbb": [
+            4305401
+        ],
+        "ins_num": 5,
+        "bytes": "f31bf7880b81c6f800000083ee3deb01",
+        "controlsize": 2,
+        "instructions": [
+            "sbb esi, edi",
+            "mov byte ptr [ebx], cl",
+            "add esi, 0xf8",
+            "sub esi, 0x3d",
+            "jmp 0x41b1f9"
+        ],
+        "variable": [
+            "esi",
+            "[ebx]"
+        ],
+        "slices": {
+            "esi": [
+                [
+                    "sub esi, 0x3d",
+                    "83ee3d"
+                ],
+                [
+                    "add esi, 0xf8",
+                    "81c6f8000000"
+                ],
+                [
+                    "sbb esi, edi",
+                    "f31bf7"
+                ]
+            ],
+            "[ebx]": [
+                [
+                    "mov byte ptr [ebx], cl",
+                    "880b"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b1ff": {
+        "start_addr": "0x41b1ff",
+        "end_addr": "0x41b218",
+        "called_time": 1025,
+        "REN": 0.16669377134493413,
+        "type": "nm",
+        "nextbb": [
+            4305433
+        ],
+        "ins_num": 10,
+        "bytes": "5ff343f20fb7fff283f723f33bfe0faffff30fb7f748f87301",
+        "controlsize": 2,
+        "instructions": [
+            "pop edi",
+            "inc ebx",
+            "movzx edi, di",
+            "xor edi, 0x23",
+            "cmp edi, esi",
+            "imul edi, edi",
+            "movzx esi, di",
+            "dec eax",
+            "clc ",
+            "jae 0x41b219"
+        ],
+        "variable": [
+            "eax",
+            "esi",
+            "ebx"
+        ],
+        "slices": {
+            "eax": [
+                [
+                    "dec eax",
+                    "48"
+                ],
+                [
+                    "imul edi, edi",
+                    "0fafff"
+                ],
+                [
+                    "xor edi, 0x23",
+                    "f283f723"
+                ],
+                [
+                    "movzx edi, di",
+                    "f20fb7ff"
+                ],
+                [
+                    "pop edi",
+                    "5f"
+                ]
+            ],
+            "esi": [
+                [
+                    "movzx esi, di",
+                    "f30fb7f7"
+                ]
+            ],
+            "ebx": [
+                [
+                    "inc ebx",
+                    "f343"
+                ]
+            ]
+        }
+    },
+    "bytes_0x41b219": {
+        "start_addr": "0x41b219",
+        "end_addr": "0x41b21c",
+        "called_time": 1025,
+        "REN": 0.16669377134493413,
+        "type": "nm",
+        "nextbb": [
+            4305437,
+            4305436
+        ],
+        "ins_num": 2,
+        "bytes": "f97201",
+        "controlsize": 2,
+        "instructions": [
+            "stc ",
+            "jb 0x41b21d"
+        ],
+        "variable": [],
+        "slices": {}
+    }
+}

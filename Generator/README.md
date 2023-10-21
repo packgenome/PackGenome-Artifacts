@@ -36,15 +36,15 @@ This script will call SimilarityAnalysis.py to find similar instructions reused 
 [Generator/config/GenConfig.json](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Generator/config/GenConfig.json) contains configuration options related to YARA rule generation. The key options excerpted from the configuration file are as follows.
 
 ```
-"rules_dir": "rules_dir",			// Directory of generated rules
-"inaccessibleTest": false,		// Generate YARA rules for inaccessible packers
-"x64": false,									// Instrumentation for x64 programs
-"accessible_dir": "",					// Samples packed by accessible packers for rule generateion
-"accessible_yara": "",				// Name of generated rule for accessible packers
-"inaccessible_dir": "",       // Samples packed by inaccessible packers for rule generateion
-"inaccessible_yara": "",			// Name of generated rule for inaccessible packers
-"accessible_packers": [],			// accessible packers for rules generation
-"inaccessible_packers": [],		// inaccessible packers for rules generation
+"rules_dir": "rules_dir",			    // Directory of generated rules
+"inaccessibleTest": false,		    // Generate YARA rules for inaccessible packers
+"x64": false,									    // Instrumentation for x64 programs
+"accessible_dir": "",					    // Samples packed by accessible packers for rule generateion
+"accessible_yara": "",				    // Name of generated rule for accessible packers
+"inaccessible_dir": "",           // Samples packed by inaccessible packers for rule generateion
+"inaccessible_yara": "",			    // Name of generated rule for inaccessible packers
+"accessible_packers": [],			    // accessible packers for rules generation
+"inaccessible_packers": [],		    // inaccessible packers for rules generation
 ```
 
 ### 0x4 Artifact Evaluation

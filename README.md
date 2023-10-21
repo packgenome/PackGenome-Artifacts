@@ -204,17 +204,17 @@ Generated YARA rules would be stored in the `Generator/RulesDir` folder and name
 
 ```
 ├── Pintool/							// Pin tools' source code
-├── Generator/						// scripts for YARA rules generation
-├── Evaluation/						// scripts for main evaluation 
-├──	Dataset/							// dataset for main evaluation
-├── accrule_gen.sh				// script for 20 accessible packers' YARA rules generation 
-├── inaccrule_gen.sh			// script for 5 inaccessible packers' YARA rules generation 
-├── acc_eval.sh						// script for evaluation on LPD dataset
-├── inacc_eval.sh					// script for evaluation on LPD1 dataset
-├── nonpack_eval.sh				// script for evaluation on NPD dataset
+├── Generator/							// scripts for YARA rules generation
+├── Evaluation/							// scripts for main evaluation 
+├── Dataset/							// dataset for main evaluation
+├── accrule_gen.sh						// script for 20 accessible packers' YARA rules generation 
+├── inaccrule_gen.sh						// script for 5 inaccessible packers' YARA rules generation 
+├── acc_eval.sh							// script for evaluation on LPD dataset
+├── inacc_eval.sh						// script for evaluation on LPD1 dataset
+├── nonpack_eval.sh						// script for evaluation on NPD dataset
 ```
 
 ## Data
 
-Our dataset is available at xxx.
+Our dataset is available at [https://zenodo.org/record/10030074](https://zenodo.org/record/10030074).
 

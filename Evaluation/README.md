@@ -11,16 +11,16 @@ Evaluation tool chain is used to compare PackGenome-generated rules with public-
 
 [Evaluation/EvaluationConfig.json](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Evaluation/configs/EvaluationConfig.json) contains configuration options related to evaluation experiments. The key options excerpted from the configuration file are as follows.
 
-```json
-"packgenome_rule": "", 		// Path of compiled PackGenome-genearted YARA rule
-"artificial_rule": "",      // Path of compiled collected human-written YARA rule
-"autoyara_rule": "",		// Path of compiled AutoYara-genearted YARA rule
-"test_mode": "",			// Evaluation mode: tagon/non
-"thread": "8",				// Thread of yara test
-"LPD_testset": "",			// Path of LPD dataset
-"LPD1_testset": "",			// Path of LPD1 dataset
-"NPD_testset": "",			// Path of NPD dataset
-"accessible_packers": [],	// Off-the-shelf packers for evaluation 
+```
+"packgenome_rule": "", 			// Path of compiled PackGenome-genearted YARA rules
+"artificial_rule": "",    	// Path of compiled collected human-written YARA rules
+"autoyara_rule": "",				// Path of compiled AutoYara-genearted YARA rules
+"test_mode": "",						// Evaluation mode: tagon/non
+"thread": "8",							// Thread of yara test
+"LPD_testset": "",					// Path of LPD dataset
+"LPD1_testset": "",					// Path of LPD1 dataset
+"NPD_testset": "",					// Path of NPD dataset
+"accessible_packers": [],		// Off-the-shelf packers for evaluation 
 "inaccessible_packers": []	// Inaccessible packers for evaluation 
 ```
 
@@ -45,7 +45,7 @@ We provide three evaluation experiments in this artifact.
 
 - Matching non-packed programs
 
-  NPD dataset contains real-world benign programs. We use the NPD dataset to measure the false positives rate that rules mistakenly match the non-packed programs. We calculate the FPR, TDR of all the rules on the LPD dataset.
+  NPD dataset contains real-world benign programs. We use the NPD dataset to measure the false positives rate that rules mistakenly match the non-packed programs. We calculate the FPR, TDR of all the rules on the NPD dataset.
 
   ```sh
   sh nonpack_eval.sh

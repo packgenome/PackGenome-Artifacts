@@ -1,5 +1,5 @@
 ## PackGenome
-
+<p><img alt="PackGenome thumbnail" align="right" width="300" src="https://github.com/packgenome/PackGenome-Artifacts/assets/87116389/f989f3d7-a08b-4275-8235-396177029b84.png"></p>
 Research Artifact for our **CCS 2023** paper: "PackGenome: Automatically Generating Robust YARA Rules for Accurate Malware Packer Detection"
 
 To free security professionals from the burden of manually piecing together the tedious steps of packer signature generation, we developed PackGenome to generate YARA rules for accurate packer detection, and compared PackGenome-generated rules with public-available packer signature collections and state-of-the-art automatic rule generation tools. Evaluation results show that PackGenome outperforms existing work in all cases with zero false negatives, low false positives, and a negligible scanning overhead increase. More details are reported in our paper published at CCS 2023.

@@ -4,9 +4,11 @@ Research Artifact for our **CCS 2023** paper: "PackGenome: Automatically Generat
 
 To free security professionals from the burden of manually piecing together the tedious steps of packer signature generation, we developed PackGenome to generate YARA rules for accurate packer detection, and compared PackGenome-generated rules with public-available packer signature collections and state-of-the-art automatic rule generation tools. Evaluation results show that PackGenome outperforms existing work in all cases with zero false negatives, low false positives, and a negligible scanning overhead increase. More details are reported in our paper published at CCS 2023.
 
-Paper: `coming soon`
+Paper: `Docs\CCS2023-PackGenome.pdf`
 
-Artifact Appendix in USENIX format: `artifact-appendix.pdf`
+Extended Paper: `Docs\CCS2023-PackGenome-extended.pdf`
+
+Artifact Appendix in USENIX format: `Docs\artifact-appendix.pdf`
 
 Our artifact provides  source code, PackGenome-generated YARA rules, and datasets used in our experiments. To facilitate the usage of this artifact, we also provide a `Docker image` with the necessary component to execute the artifact. 
 

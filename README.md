@@ -17,7 +17,7 @@ Our artifact provides  source code, PackGenome-generated YARA rules, and dataset
 
 ### Hardware dependencies
 
-We ran all experiments on a testbed machine with Intel i7-6700 CPU (4 cores, 3.40GHz), 32GB RAM, 1.8TB Hard Disk, running Windows 10. The AE reviewers can use more powerful hardware with more than 50 GB of disk space, because the size of our datasets is nearly 30 GB. To ease the AE committee to review, we omit the trace recording process and provide the recorded trace files in the `Docker image` and repository ([Dataset/RGD](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Dataset/RGD)). Because the trace recording process for all packed programs would takes more than 1 days. We provide the trace recorder in [MyPinTool](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Pintool)) folder and the [Generator/LogGeneration.py](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Generator/LogGeneration.py) script. Without tracing, the whole evaluation takes roughly 3 hours.
+We ran all experiments on a testbed machine with Intel i7-6700 CPU (4 cores, 3.40GHz), 32GB RAM, 1.8TB Hard Disk, running Windows 10. The AE reviewers can use more powerful hardware with more than 50 GB of disk space, because the size of our datasets is nearly 30 GB. To ease the AE committee to review, we omit the trace recording process and provide the recorded trace files in the [`Docker image`](https://zenodo.org/records/10030074) and repository ([Dataset/RGD](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Dataset/RGD)). Because the trace recording process for all packed programs would takes more than 1 days. We provide the trace recorder in [MyPinTool](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Pintool)) folder and the [Generator/LogGeneration.py](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Generator/LogGeneration.py) script. Without tracing, the whole evaluation takes roughly 3 hours.
 
 ### Software dependencies
 ```
@@ -56,7 +56,7 @@ All the datasets have packed into the docker image.
 
 ### **(E0):** Import Docker Image
 
-Download the packed `docker image`, then run the commands below to build a docker container.
+Download the packed [`Docker image`](https://zenodo.org/records/10030074), then run the commands below to build a docker container.
 
 1. Import the packed docker image
 

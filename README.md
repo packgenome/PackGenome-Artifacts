@@ -54,7 +54,7 @@ All the datasets have packed into the docker image. We have also provided a [dow
 
 ## Artifact Evaluation
 
-### **(E0):** Import Docker Image
+### Installation: Import Docker Image
 
 Download the packed [`Docker image`](https://zenodo.org/records/10030074), then run the commands below to build a docker container.
 

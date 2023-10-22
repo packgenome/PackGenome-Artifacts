@@ -29,7 +29,7 @@ We ran all experiments on a testbed machine with Intel i7-6700 CPU (4 cores, 3.4
 - Intel pin 3.12
 - Detect It Easy 3.06
 ```
-To reduce the workload of AE reviewers, we have packed all the required environment and software dependencies into the docker image.
+To reduce the workload of AE reviewers, we have packed all the required environment and software dependencies into the [`Docker image`](https://zenodo.org/records/10030074).
 At least a Windows 10 system with `Docker` software is required.
 
 ### Dataset

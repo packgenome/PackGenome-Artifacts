@@ -1,34 +1,40 @@
 ## PackGenome
 <p><img alt="PackGenome thumbnail" align="right" width="300" src="https://github.com/packgenome/PackGenome-Artifacts/assets/87116389/f989f3d7-a08b-4275-8235-396177029b84.png"></p>
+
 Research Artifact for our **CCS 2023** paper: "PackGenome: Automatically Generating Robust YARA Rules for Accurate Malware Packer Detection"
 
 To free security professionals from the burden of manually piecing together the tedious steps of packer signature generation, we developed PackGenome to generate YARA rules for accurate packer detection, and compared PackGenome-generated rules with public-available packer signature collections and state-of-the-art automatic rule generation tools. Evaluation results show that PackGenome outperforms existing work in all cases with zero false negatives, low false positives, and a negligible scanning overhead increase. More details are reported in our paper published at CCS 2023.
 
-Paper: `Docs\CCS2023-PackGenome.pdf`
+Paper: [`Docs\CCS2023-PackGenome.pdf`](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Docs/CCS2023-PackGenome.pdf)
 
-Extended Paper: `Docs\CCS2023-PackGenome-extended.pdf`
+Extended Paper: [`Docs\CCS2023-PackGenome-extended.pdf`](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Docs/CCS2023-PackGenome-extended.pdf)
 
-Artifact Appendix in USENIX format: `Docs\artifact-appendix.pdf`
+Artifact Appendix: [`Docs\artifact-appendix.pdf`](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Docs/artifact-appendix.pdf)
 
-Our artifact provides  source code, PackGenome-generated YARA rules, and datasets used in our experiments. To facilitate the usage of this artifact, we also provide a `Docker image` with the necessary component to execute the artifact. 
+Our artifact provides  source code, PackGenome-generated YARA rules, and datasets used in our experiments. To facilitate the usage of this artifact, we provide a [`Docker image`](https://zenodo.org/records/10030074) with the necessary component to execute the artifact. 
 
 ## Prerequisites
 
-```
-git
-python3 (3.7 or later version)
-	- angr 9.2.6
-	- plyara 2.1.1
-YARA 4.2.0
-Intel pin 3.12
-Detect It Easy 3.06
-```
-
-### Hardware
+### Hardware dependencies
 
 We ran all experiments on a testbed machine with Intel i7-6700 CPU (4 cores, 3.40GHz), 32GB RAM, 1.8TB Hard Disk, running Windows 10. The AE reviewers can use more powerful hardware with more than 50 GB of disk space, because the size of our datasets is nearly 30 GB. To ease the AE committee to review, we omit the trace recording process and provide the recorded trace files in the `Docker image` and repository ([Dataset/RGD](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Dataset/RGD)). Because the trace recording process for all packed programs would takes more than 1 days. We provide the trace recorder in [MyPinTool](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Pintool)) folder and the [Generator/LogGeneration.py](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Generator/LogGeneration.py) script. Without tracing, the whole evaluation takes roughly 3 hours.
 
+### Software dependencies
+```
+- git
+- python3 (3.7 or later version)
+	- angr 9.2.6
+	- plyara 2.1.1
+- YARA 4.2.0
+- Intel pin 3.12
+- Detect It Easy 3.06
+```
+To reduce the workload of AE reviewers, we have packed all the required environment and software dependencies into the docker image.
+At least a Windows 10 system with `Docker` software is required.
+
 ### Dataset
+
+All the datasets have packed into the docker image.
 
 - **RGD: rule generation dataset**
 
@@ -40,7 +46,7 @@ We ran all experiments on a testbed machine with Intel i7-6700 CPU (4 cores, 3.4
 
 - **LPD1: inaccessible packer dataset**
 
-   It contains non-malicious packed programs that can be linked to inaccessible packers.
+   It contains non-malicious packed programs that can be linked to five inaccessible packers.
 
 - **NPD: non-packed samples dataset**
 
@@ -215,8 +221,3 @@ Generated YARA rules would be stored in the `Generator/RulesDir` folder and name
 ├── inacc_eval.sh						// script for evaluation on LPD1 dataset
 ├── nonpack_eval.sh						// script for evaluation on NPD dataset
 ```
-
-## Data
-
-Our dataset is available at [https://zenodo.org/record/10030074](https://zenodo.org/record/10030074).
-

@@ -34,7 +34,7 @@ At least a Windows 10 system with `Docker` software is required.
 
 ### Dataset
 
-All the datasets have packed into the docker image.
+All the datasets have packed into the docker image. We have also provided a [download link](https://mailnankaieducn-my.sharepoint.com/:u:/g/personal/1811387_mail_nankai_edu_cn/EYdZVCc4tk9AmSTwqb-HRYEBU4Bjw3d3B2M0fl859GLpcQ) for the datasets via OneDrive.
 
 - **RGD: rule generation dataset**
 
@@ -221,3 +221,4 @@ Generated YARA rules would be stored in the `Generator/RulesDir` folder and name
 ├── inacc_eval.sh						// script for evaluation on LPD1 dataset
 ├── nonpack_eval.sh						// script for evaluation on NPD dataset
 ```
+

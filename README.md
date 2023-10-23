@@ -48,7 +48,7 @@ All the datasets have packed into the docker image. We have also provided a [dow
 
    It contains non-malicious packed programs that can be linked to five inaccessible packers.
 
-- **NBPD: non-packed samples dataset**
+- **NPBD: non-packed samples dataset**
 
   It contains real-world benign programs (e.g., system files), which extracted from the non-packed samples dataset NPD (including more than 20,000 malicious samples) described in our paper. 
 
@@ -183,9 +183,9 @@ DIE
 
 In the above example, both PackGenome-generated rules and Detect It Easy accurately identify all programs packed by UPX in the LPD dataset with no false positives and false negatives. And PackGenome-generated rules take less time compared to Detect It Easy. Public-available human-written packer detection rules suffers from a high false positive. As for AutoYara, it doesn't work well for packed programs.
 
-### (E3): Comparison on NBPD [time required 10 minutes]
+### (E3): Comparison on NPBD [time required 10 minutes]
 
-This experiment compare PackGenome-generated rules with human-written rules, AutoYara, and DIE on the NBPD dataset. We also provide compiled YARA rules (located at [Evaluation/YaraRules](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Evaluation/yaraRules)) for evaluation to save time. 
+This experiment compare PackGenome-generated rules with human-written rules, AutoYara, and DIE on the NPBD dataset. We also provide compiled YARA rules (located at [Evaluation/YaraRules](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Evaluation/yaraRules)) for evaluation to save time. 
 
 Run the command below to repeat this experiment:
 
@@ -193,7 +193,7 @@ Run the command below to repeat this experiment:
 sh nonpack_eval.sh
 ```
 
-We calculate the FPR, TDR of all rules on the NBPD dataset. The evaluation result would be stored in the `Evaluation/result/acc_npd.txt` .
+We calculate the FPR, TDR of all rules on the NPBD dataset. The evaluation result would be stored in the `Evaluation/result/acc_npd.txt` .
 
 ### (E4): Comparison on LPD1 [time required 10 minutes]
 
@@ -219,6 +219,6 @@ Generated YARA rules would be stored in the `Generator/RulesDir` folder and name
 ├── inaccrule_gen.sh						// script for 5 inaccessible packers' YARA rules generation 
 ├── acc_eval.sh							// script for evaluation on LPD dataset
 ├── inacc_eval.sh						// script for evaluation on LPD1 dataset
-├── nonpack_eval.sh						// script for evaluation on NBPD dataset
+├── nonpack_eval.sh						// script for evaluation on NPBD dataset
 ```
 

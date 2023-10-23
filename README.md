@@ -34,23 +34,34 @@ At least a Windows 10 system with `Docker` software is required.
 
 ### Dataset
 
+Note that our paper extensively evaluated real-world Windows and Linux malware samples that take over 1 TB of disk space. To ensure the safety of the artifact evaluation process and to prevent any potential malicious or destructive operations, we have strictly provided non-malicious samples only.
+
+
 All the datasets have packed into the docker image. We have also provided a [download link](https://mailnankaieducn-my.sharepoint.com/:u:/g/personal/1811387_mail_nankai_edu_cn/EYdZVCc4tk9AmSTwqb-HRYEBU4Bjw3d3B2M0fl859GLpcQ) for the datasets via OneDrive.
 
 - **RGD: rule generation dataset**
 
   It contains programs packed by 20 popular off-the-shelf packers with multiple versions and configurations and 5 inaccessible packers. Each program corresponds to a trace file that records the unpacking routine instructions executed during program execution. 
 
+	> Location in docker image: ``Dataset/RGD``.
+
 - **LPD: labeled packed samples dataset**
 
   It contains non-malicious packed programs that can be linked to known packers (i.e., 20 off-the-shelf packers with multiple versions and configurations).
+
+	> Location in docker image: ``Dataset/LPD``.
 
 - **LPD1: inaccessible packer dataset**
 
    It contains non-malicious packed programs that can be linked to five inaccessible packers.
 
+   > Location in docker image: ``Dataset/LPD1``.
+
 - **NPBD: non-packed samples dataset**
 
   It contains real-world benign programs (e.g., system files), which extracted from the non-packed samples dataset NPD (including more than 20,000 malicious samples) described in our paper. 
+
+  > Location in docker image: ``Dataset/NPBD``.
 
 ## Artifact Evaluation
 

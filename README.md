@@ -11,13 +11,13 @@ Extended Paper: [`Docs\CCS2023-PackGenome-extended.pdf`](https://github.com/pack
 
 Artifact Appendix: [`Docs\artifact-appendix.pdf`](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Docs/artifact-appendix.pdf)
 
-Our artifact provides  source code, PackGenome-generated YARA rules, and datasets used in our experiments. To facilitate the usage of this artifact, we provide a [`Docker image`](https://zenodo.org/records/10030074) with the necessary component to execute the artifact. 
+Our artifact provides  source code, PackGenome-generated YARA rules, and datasets used in our experiments. To facilitate the usage of this artifact, we provide a [`Docker image`](https://zenodo.org/records/10030074/files/packgenome.tar) with the necessary component to execute the artifact. 
 
 ## Prerequisites
 
 ### Hardware dependencies
 
-We ran all experiments on a testbed machine with Intel i7-6700 CPU (4 cores, 3.40GHz), 32GB RAM, 1.8TB Hard Disk, running Windows 10. The AE reviewers can use more powerful hardware with more than 50 GB of disk space, because the size of our datasets is nearly 30 GB. To ease the AE committee to review, we omit the trace recording process and provide the recorded trace files in the [`Docker image`](https://zenodo.org/records/10030074) and repository ([Dataset/RGD](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Dataset/RGD)). Because the trace recording process for all packed programs would takes more than 1 days. We provide the trace recorder in [MyPinTool](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Pintool)) folder and the [Generator/LogGeneration.py](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Generator/LogGeneration.py) script. Without tracing, the whole evaluation takes roughly 3 hours.
+We ran all experiments on a testbed machine with Intel i7-6700 CPU (4 cores, 3.40GHz), 32GB RAM, 1.8TB Hard Disk, running Windows 10. The AE reviewers can use more powerful hardware with more than 50 GB of disk space, because the size of our datasets is nearly 30 GB. To ease the AE committee to review, we omit the trace recording process and provide the recorded trace files in the [`Docker image`](https://zenodo.org/records/10030074/files/packgenome.tar) and repository ([Dataset/RGD](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Dataset/RGD)). Because the trace recording process for all packed programs would takes more than 1 days. We provide the trace recorder in [MyPinTool](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Pintool) folder and the [Generator/LogGeneration.py](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Generator/LogGeneration.py) script. Without tracing, the whole evaluation takes roughly 3 hours.
 
 ### Software dependencies
 ```
@@ -29,7 +29,7 @@ We ran all experiments on a testbed machine with Intel i7-6700 CPU (4 cores, 3.4
 - Intel pin 3.12
 - Detect It Easy 3.06
 ```
-To reduce the workload of AE reviewers, we have packed all the required environment and software dependencies into the [`Docker image`](https://zenodo.org/records/10030074).
+To reduce the workload of AE reviewers, we have packed all the required environment and software dependencies into the [`Docker image`](https://zenodo.org/records/10030074/files/packgenome.tar).
 At least a Windows 10 system with `Docker` software is required.
 
 ### Dataset
@@ -48,15 +48,15 @@ All the datasets have packed into the docker image. We have also provided a [dow
 
    It contains non-malicious packed programs that can be linked to five inaccessible packers.
 
-- **NPD: non-packed samples dataset**
+- **NBPD: non-packed samples dataset**
 
-  It contains real-world benign programs such as system files.
+  It contains real-world benign programs (e.g., system files), which extracted from the non-packed samples dataset NPD (including more than 20,000 malicious samples) described in our paper. 
 
 ## Artifact Evaluation
 
 ### Installation: Import Docker Image
 
-Download the packed [`Docker image`](https://zenodo.org/records/10030074), then run the commands below to build a docker container.
+Download the packed [`Docker image`](https://zenodo.org/records/10030074/files/packgenome.tar), then run the commands below to build a docker container.
 
 1. Import the packed docker image
 
@@ -183,9 +183,9 @@ DIE
 
 In the above example, both PackGenome-generated rules and Detect It Easy accurately identify all programs packed by UPX in the LPD dataset with no false positives and false negatives. And PackGenome-generated rules take less time compared to Detect It Easy. Public-available human-written packer detection rules suffers from a high false positive. As for AutoYara, it doesn't work well for packed programs.
 
-### (E3): Comparison on NPD [time required 10 minutes]
+### (E3): Comparison on NBPD [time required 10 minutes]
 
-This experiment compare PackGenome-generated rules with human-written rules, AutoYara, and DIE on the NPD dataset. We also provide compiled YARA rules (located at [Evaluation/YaraRules](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Evaluation/yaraRules)) for evaluation to save time. 
+This experiment compare PackGenome-generated rules with human-written rules, AutoYara, and DIE on the NBPD dataset. We also provide compiled YARA rules (located at [Evaluation/YaraRules](https://github.com/packgenome/PackGenome-Artifacts/tree/main/Evaluation/yaraRules)) for evaluation to save time. 
 
 Run the command below to repeat this experiment:
 
@@ -193,7 +193,7 @@ Run the command below to repeat this experiment:
 sh nonpack_eval.sh
 ```
 
-We calculate the FPR, TDR of all rules on the NPD dataset. The evaluation result would be stored in the `Evaluation/result/acc_npd.txt` .
+We calculate the FPR, TDR of all rules on the NBPD dataset. The evaluation result would be stored in the `Evaluation/result/acc_npd.txt` .
 
 ### (E4): Comparison on LPD1 [time required 10 minutes]
 
@@ -219,6 +219,6 @@ Generated YARA rules would be stored in the `Generator/RulesDir` folder and name
 ├── inaccrule_gen.sh						// script for 5 inaccessible packers' YARA rules generation 
 ├── acc_eval.sh							// script for evaluation on LPD dataset
 ├── inacc_eval.sh						// script for evaluation on LPD1 dataset
-├── nonpack_eval.sh						// script for evaluation on NPD dataset
+├── nonpack_eval.sh						// script for evaluation on NBPD dataset
 ```
 

@@ -1,5 +1,5 @@
 ## PackGenome
-<p><img alt="PackGenome thumbnail" align="right" width="300" src="https://github.com/packgenome/PackGenome-Artifacts/assets/87116389/f989f3d7-a08b-4275-8235-396177029b84.png"></p>
+<a href="https://github.com/packgenome/PackGenome-Artifacts/blob/main/Docs/CCS2023-PackGenome.pdf"><img alt="PackGenome thumbnail" align="right" width="300" src="https://github.com/packgenome/PackGenome-Artifacts/assets/87116389/6e828837-1864-4dea-b5fe-fbcaaed12927"></a>
 
 Research Artifact for our **CCS 2023** paper: "PackGenome: Automatically Generating Robust YARA Rules for Accurate Malware Packer Detection"
 

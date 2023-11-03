@@ -217,7 +217,7 @@ sh inaccrule_gen.sh
 sh inacc_eval.sh
 ```
 
-Generated YARA rules would be stored in the `Generator/RulesDir` folder and named `inaccessible_rule.yar`. The validation result would be stored in the `Evaluation/result` folder with a file name`inacc_lpd1.txt`.
+Generated YARA rules would be stored in the `Generator/rules_dir` folder and named `inaccessible_rule.yar`. The validation result would be stored in the `Evaluation/result` folder with a file name`inacc_lpd1.txt`.
 
 ## Code Structure
 

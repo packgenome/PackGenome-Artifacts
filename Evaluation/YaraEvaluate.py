@@ -20,6 +20,7 @@ class YaraMatch(object):
         self.test_mode=configs["test_mode"]
         self.other_tools_test=configs["other_tools_test"]  
         self.inaccessible_test=configs["inaccessible_test"]
+        # tagon -- LPD:labeled packed program dataset
         if configs["test_mode"]=="tagon":
             if self.inaccessible_test:
                 self.testset_path = os.path.join(configs["LPD1_testset"], packer)+"/"
@@ -41,6 +42,7 @@ class YaraMatch(object):
                     self.autoyara_rule = self.autoyara_rule.replace(".yar",'_accessible.yar')
                 self.efficiency_result = {os.path.basename(self.packgenome_rule):0, os.path.basename(self.artificial_rule):0, os.path.basename(self.autoyara_rule):0}
         else:
+        # NPD -- non-packed program dataset
             self.testset_path = configs["NPD_testset"]
             self.output_dir = configs["output_dir"]+"/non_pack/"
             self.output_file = "yara_matched.json"
@@ -88,7 +90,6 @@ class YaraMatch(object):
         os.remove(txtfile)
 
 class YaraAnalysis(object):
-    White_List = ["nrv2x", "nrv2e", "aplib", "jcalg1", "lzma", "zip_archive"]
     def __init__(self, json_result:str, packer:str, configs, efficiency):
         self.json_result = json_result
         self.packer = packer
@@ -132,17 +133,15 @@ class YaraAnalysis(object):
                         self.TD_samples[yarafile].append(sample)
                     non_target = False
                     target = False
-                    white = False
                     for rule in content[yarafile]:
-                        for white in self.White_List:
-                            if white in rule.lower():
-                                break
                         if self.packer in rule.lower():
                             target = True
+                        # fsg and mew are sharing similar unpacking routines
                         elif self.packer=="fsg" and "mew" in rule.lower():
                             target=True
                         elif self.packer=="mew" and "fsg" in rule.lower():
                             target=True
+                        # winlicense and themida are sharing similar unpacking routines
                         elif self.packer=="winlicense" and "themida" in rule.lower():
                             target=True
                         elif self.packer=="themida" and "winlicense" in rule.lower():

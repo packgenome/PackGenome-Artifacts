@@ -64,7 +64,6 @@ def conditionHandler(system="Windows", stringname = None, type = "all", counter 
                 condition += " and ({} of them)".format(counter)
 
 
-    # TODO find method to only search the code section
     # the base_of_code is not usable 
     # the overlay cause false negative when handling UPX programs
     if system == "Windows":
@@ -78,7 +77,7 @@ def conditionHandler(system="Windows", stringname = None, type = "all", counter 
         #condition += "(for all of them : (pe.base_of_code <@ and @ < pe.base_of_code+pe.size_of_code))" #yara not good performance
     elif system == "LINUX":
         condition += ""
-        pass # TODO yara not support find code section
+        pass # TODO YARA is not support find code section
         # condition += "(for any i in (1..elf.number_of_sections): ((elf.sections[i].flags & elf.SHF_EXECINSTR) and (for all of them : (elf.sections[i].offset <@ and @ < elf.sections[i].offset+elf.sections[i].size))))"
         # condition += "(for any i in (1..elf.number_of_segments): ((elf.segments[i].flags & elf.PF_X) and (for all of them : (elf.segments[i].offset <@ and @ < elf.segments[i].offset+elf.segments[i].file_size))))"
 
@@ -91,7 +90,6 @@ def wildRuleHandler(bytesequence):
     if WILD_LENGTH_MATCH in rule:
         #TODO support flexible scope
         rule.replace(WILD_LENGTH_MATCH, "[0-10]")
-    #TODO add support to (e9|0f)
     return rule
 
 def byteSelection(rule, counter, byteslist):

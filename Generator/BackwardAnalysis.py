@@ -11,7 +11,6 @@
 @Desc    :   None
 '''
 
-#TODO forward analysis
 import json
 import angr
 from DataType import *
@@ -44,7 +43,6 @@ class BackwardAnalysis(object):
         self._obfuscator = obfuscator
         self._preProcess()
         self.valueSlicing()
-        #TODO backward slicing each variable
     
     def _preProcess(self):
         """

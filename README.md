@@ -5,13 +5,26 @@ Research Artifact for our **CCS 2023** paper: "PackGenome: Automatically Generat
 
 To free security professionals from the burden of manually piecing together the tedious steps of packer signature generation, we developed PackGenome to generate YARA rules for accurate packer detection, and compared PackGenome-generated rules with public-available packer signature collections and state-of-the-art automatic rule generation tools. Evaluation results show that PackGenome outperforms existing work in all cases with zero false negatives, low false positives, and a negligible scanning overhead increase. More details are reported in our paper published at CCS 2023.
 
-Paper: [`Docs\CCS2023-PackGenome.pdf`](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Docs/CCS2023-PackGenome.pdf)
+Paper: 
+* [ACM Digital Library](https://dl.acm.org/doi/10.1145/3576915.3616625)
+* [`Docs\CCS2023-PackGenome.pdf`](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Docs/CCS2023-PackGenome.pdf)
 
 Extended Paper: [`Docs\CCS2023-PackGenome-extended.pdf`](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Docs/CCS2023-PackGenome-extended.pdf)
 
 Artifact Appendix: [`Docs\artifact-appendix.pdf`](https://github.com/packgenome/PackGenome-Artifacts/blob/main/Docs/artifact-appendix.pdf)
 
 Our artifact provides  source code, PackGenome-generated YARA rules, and datasets used in our experiments. To facilitate the usage of this artifact, we provide a [`Docker image`](https://zenodo.org/records/10030074/files/packgenome.tar) with the necessary component to execute the artifact. 
+
+```
+@inproceedings{li2023packgenome,
+  title={PackGenome: Automatically Generating Robust YARA Rules for Accurate Malware Packer Detection},
+  author={Li, Shijia and Ming, Jiang and Qiu, Pengda and Chen, Qiyuan and Liu, Lanqing and Bao, Huaifeng and Wang, Qiang and Jia, Chunfu},
+  booktitle={Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security},
+  pages={3078–3092},
+  year={2023},
+  location = {, Copenhagen, Denmark, }
+}
+```
 
 ## Prerequisites
 
